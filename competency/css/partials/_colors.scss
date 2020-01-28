@@ -1,0 +1,15 @@
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$gray: #F5F5F5;
+$header: #40965b;
+$footer: #1b6a34;
+$hover: #0b752c;
+$hoverText: #6ef298;
+$current: #0b2d16;
+$highlight: #dfffdf;
+
+.gray {
+    background-color: $gray;
+    box-shadow: inset 10px 0px 10px rgba(0, 0, 0, 0.1);
+}

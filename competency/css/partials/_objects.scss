@@ -1,0 +1,25 @@
+/* Objects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.fullwidth {
+    width: 101.5%;
+    float: right;
+    right: 0;
+    left: 0;
+    margin: -10px -10px 0px 0px !important;
+}
+
+.crossList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    a {
+        color: black;
+    }
+}
