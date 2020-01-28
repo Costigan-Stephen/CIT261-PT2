@@ -5,8 +5,6 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .gray {
   background-color: #F5F5F5;
-  -webkit-box-shadow: inset 10px 0px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 10px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Global Values
@@ -260,6 +258,14 @@ p {
   right: 0;
   left: 0;
   margin: -10px -10px 0px 0px !important;
+}
+
+.stretch {
+  width: 101.5%;
+  float: right;
+  right: 0;
+  left: 0;
+  margin: 0px -50px 0px 0px !important;
 }
 
 .crossList {
