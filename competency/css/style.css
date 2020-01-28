@@ -26,7 +26,7 @@ body {
 
 .social,
 footer {
-  background-color: #1b6a34;
+  background-color: #18283d;
   text-align: center;
   color: white;
   padding: 0;
@@ -38,11 +38,6 @@ footer a {
   color: white;
 }
 
-.social a:hover,
-footer a:hover {
-  color: #6ef298;
-}
-
 .social ul li,
 footer ul li {
   list-style: none;
@@ -51,6 +46,15 @@ footer ul li {
 
 footer {
   margin-bottom: 40px;
+}
+
+a:hover {
+  color: #fffb47;
+  text-decoration: underline;
+}
+
+.highlight a:hover {
+  color: #00b51e;
 }
 
 .button {
@@ -69,7 +73,7 @@ footer {
 /* Nav Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
-  background-color: #40965b;
+  background-color: #475d78;
   text-align: center;
 }
 
@@ -79,7 +83,7 @@ nav ul {
   border: none;
   padding: 0 0 0 0 !important;
   margin: 0 0 0 50px;
-  background-color: #40965b;
+  background-color: #475d78;
   height: 64px;
 }
 
@@ -108,12 +112,12 @@ nav li a {
 }
 
 nav a:hover {
-  background-color: #0b752c;
-  color: #6ef298;
+  background-color: #081424;
+  color: #fffb47;
 }
 
 nav .current {
-  background-color: #0b2d16;
+  background-color: #31445c;
 }
 
 /* Typography
@@ -234,16 +238,16 @@ header {
 }
 
 .paragraph {
-  width: 70%;
+  width: 65%;
   position: relative;
-  margin-left: 16%;
+  margin-left: 20%;
 }
 
 .highlight {
   margin: 0 50px;
   padding: 15px 30px;
-  background-color: #dfffdf;
-  border: 1pt #40965b solid;
+  background-color: #bdd9ff;
+  border: 1pt #475d78 solid;
 }
 
 p {

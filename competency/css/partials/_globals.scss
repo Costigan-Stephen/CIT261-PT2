@@ -28,10 +28,6 @@ footer {
         color: white;
     }
 
-    a:hover {
-        color: $hoverText;
-    }
-
     ul li {
         list-style: none;
         display: inline;
@@ -40,6 +36,15 @@ footer {
 
 footer {
     margin-bottom: 40px;
+}
+
+a:hover {
+    color: $hoverText;
+    text-decoration: underline;
+}
+
+.highlight a:hover {
+    color: $hoverHighlight;
 }
 
 .button {
