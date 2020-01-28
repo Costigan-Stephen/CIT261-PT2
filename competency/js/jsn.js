@@ -1,6 +1,6 @@
 function testXML() {
     var xmlhttp = new XMLHttpRequest();
-    var url = "/json/test.txt";
+    var url = "./json/test.txt";
 
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
