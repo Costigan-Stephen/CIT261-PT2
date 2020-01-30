@@ -45,15 +45,82 @@
     <!--Lesson 1: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays. -->
     <section class="innerPadding fullwidth gray">
       <div class="paragraph">
+        <h2 id="lesson1">LESSON 1</h2><br />
+        <h5>LOOPS, CONDITIONAL STATEMENTS, FUNCTIONS, VARIABLES, PARAMETERS, ARRAYS, ASSOCIATIVE ARRAYS</h5>
+        <p>This lesson can be best understood by a few short scripts written for a few different outcomes. The first
+          script is written to better look at all elements of the lesson except for Arrays and Associative Arrays, which
+          we will cover hereafter. The script will ask the user to input two numbers, the first number will be raised to
+          the power of the second and it will then display all iterations of that calculation until we reach the answer.
+        </p>
 
+        <p>The individual itterations will be shown so that the repetitions can be seen and understood as they happen
+          rather than simply assuming they were or having to follow them in a script debugger. If you look at the
+          JavaScript function calc(), you will notice the condition asking if the inputs (x and y) are greater than 0.
+          If the statement is true, it will begin a while loop, (which could just as easily be substituted for a For
+          loop) The loop uses a temporary variable of i to increment each time until it is the same as x and then it
+          quits.</p>
 
+        <p>To sum up, this first example includes a <b>loop</b>, <b>conditional statements</b>,
+          <b>functions</b>, <b>variables</b> and <b>parameters</b>.
+        </p>
+
+        <p class="codepen" data-height="500" data-theme-id="default" data-default-tab="js,result"
+          data-user="costigan-stephen" data-slug-hash="qBEGKVB"
+          style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+          data-pen-title="qBEGKVB">
+          <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/qBEGKVB">
+              qBEGKVB</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <p>Alternatively, for our loop, we could have used:
+          <pre class="highlight">
+            for(var i=0,i <= y, i++){
+              cal = Math.pow(x, i);
+              output += x + " &lt;sup&gt;" + i + " &lt;/sup&gt; = " + addCommas(cal) + " &lt;br /&gt;";
+            }</pre>
+
+        </p>
+        <p>NEXT let's look into <b>Arrays</b>! For this one, let's first create an array and then work
+          with the values inside. We will also stringify the array so that we can visualize the array we have created.
+        </p>
+
+        <p class="codepen" data-height="400" data-theme-id="default" data-default-tab="js,result"
+          data-user="costigan-stephen" data-slug-hash="OJPYovV"
+          style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+          data-pen-title="OJPYovV">
+          <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/OJPYovV">
+              OJPYovV</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+        <p>Lastly, <b>Associative Arrays</b>! In order to accomplish this one we will be separating the array attributes
+          into separate inputs and then making an assessment based on mileage. I've added some sample data to make this
+          easier, but the idea is that if the mileage is less than 100,000 you pass the assessment, otherwise, it will
+          tell you that you should start saving up for a new car!</p>
+
+        <p>We will stringify this array as well so that it will be easier to visualize. Notice the elements are
+          separated with object names as well as values.</p>
+
+        <p class="codepen" data-height="300" data-theme-id="default" data-default-tab="js,result"
+          data-user="costigan-stephen" data-slug-hash="Jjoqame"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+          data-pen-title="Associative Array">
+          <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/Jjoqame">
+              Associative Array</a> by Costigan-Stephen (<a
+              href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
       </div>
     </section>
 
     <!--Lesson 2: Object Creation Functions, Inheritance, Properties, Methods, Instantiation. -->
     <section class="innerPadding fullwidth ">
       <div class="paragraph">
-
+        <h2 id="lesson2">LESSON 2</h2><br />
+        <h5>OBJECT CREATION FUNCTIONS, INHERITANCE, PROPERTIES, METHODS, INSTANTIATION</h5>
 
       </div>
     </section>
@@ -61,7 +128,8 @@
     <!--Lesson 9: Standard JavaScript Events Including those for Mobile Devices and Animation and Transition Events. -->
     <section class="innerPadding fullwidth gray">
       <div class="paragraph">
-
+        <h2 id="lesson9">LESSON 9</h2><br />
+        <h5>STANDARD JAVASCRIPT EVENTS INCLUDING THOSE FOR MOBILE DEVICES AND ANIMATION AND TRANSITION EVENTS</h5>
 
       </div>
     </section>
