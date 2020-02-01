@@ -28,7 +28,8 @@ header {
 }
 
 .paragraph {
-    width: 65%;
+    z-index: 1;
+    width: $paragraph;
     position: relative;
     margin-left: 20%;
 }
@@ -38,8 +39,63 @@ header {
     padding: 15px 30px;
     background-color: $highlight;
     border: 1pt $header solid;
+    list-style: none;
+}
+
+.titleHighlight {
+    margin: 0 50px;
+    padding: 15px 30px;
+    background-color: $titleHighlight;
+    list-style: none;
+    margin-bottom: 10%;
 }
 
 p {
     margin: 20px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+.titleText {
+    position: relative;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.arrange {
+    display: grid;
+    grid-template-areas:
+        "left1 . right1"
+        "left2 . right2";
+
+    img {
+        align-items: center;
+        width: 120px;
+        height: auto;
+    }
+
+    h5 {
+        text-decoration: underline;
+        font-weight: 500;
+    }
+}
+
+.full {
+    width: $full;
+}
+
+.half {
+    width: $half;
 }

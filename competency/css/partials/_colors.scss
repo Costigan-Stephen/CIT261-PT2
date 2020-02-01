@@ -5,12 +5,18 @@ $gray: #F5F5F5;
 $header: #475d78;
 $footer: #18283d;
 $hover: #081424;
-$hoverText: #fffb47;
+$hoverText: #009933;
 $hoverHighlight: #00b51e;
 $current: #31445c;
-$highlight: #bdd9ff;
+$highlight: #cdcdcd;
+$titleHighlight: rgba(255, 255, 255, 0.6);
+$headerDarken: rgba(0, 0, 0, 0.3);
 
 .gray {
     background-color: $gray;
     // box-shadow: inset 10px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.whiteText {
+    color: white;
 }
