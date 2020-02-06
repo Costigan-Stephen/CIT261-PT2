@@ -119,7 +119,64 @@
       <div class="paragraph">
         <h2 id="lesson2">LESSON 2</h2><br />
         <h5>OBJECT CREATION FUNCTIONS, INHERITANCE, PROPERTIES, METHODS, INSTANTIATION</h5>
+        <p>After looking at the above lesson examples with associative arrays we might now understand better how we can
+          create an object with pre-set values. For lack of a better example, we will use the car array above as our
+          template object. We will be able to take this first object and make variations of it as we need to, which we
+          will go into in a moment. For now, simply understand that the object we have made can be duplicated to make
+          more.:
+          <pre class="highlight">
+            var cars = {
+              Make:"Ford",
+              Model:"Falcon",
+              Year:"2010",
+              Mileage:"80000"
+            };</pre>
+        </p>
+        <p>The above JavaScript initialized and created the object cars and gave it 4 properties of Make, Model, Year,
+          and Mileage, which we can fill with input values or duplicate for use with other objects if we so chose. If we
+          decide that we want to duplicate these properties into another object, there are a few different methods to do
+          this.
+        </p>
+        <p>The SECOND method utilizes the Object.create method and looks like this:
+          <pre class="highlight">
+            var newCar = Object.create(cars);
+                newCar.Make = "Toyota";
+                newCar.Model = "Camry";
+                newCar.Year = "2012";
+                newCar.Mileage = "60000";</pre>
+        </p>
+        <p>You may notice that the new array "newCar" now has the same properties of Make, Model, Year, and Mileage as
+          Cars did, but with entirely different values. This can be an effective method of creating a series of values
+          based on the same properties. An example of where this might be useful is on occasions where you might want to
+          compare two different cars online in a car buying scenario or otherwise. In these occasions there would likely
+          be more properties to the vehicle such as asking price and condition.
+        </p>
+        <p>Next, the THIRD method utilizes functions to create objects:
+          <pre class="highlight">
+            function objCar(Make,Model,Year,Mileage) {
+                this.Make = Make;
+                this.Model = Model;
+                this.Year = Year;
+                this.Mileage = Mileage;
+            }</pre>
+        </p>
+        <p>What just happened here is that the object objCar accepted 4 entries of Make, Model, Year, Mileage as
+          property values for it's own fields. There are a number of reasons why you might want to copy existing
+          values, but the main point is that these properties are either initialized or populated by the values
+          entered into the function. Bottom line, objects are very useful! being able to associate a property with an
+          object can be a lot better than trying to remember where we stored the value in an array.</p>
 
+        <p>So, let's play with some code! Let's examine all three of the above in the example below:</p>
+        <p class="codepen" data-height="400" data-theme-id="default" data-default-tab="js,result"
+          data-user="costigan-stephen" data-slug-hash="wvavYLM"
+          style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+          data-pen-title="Creating Objects">
+          <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/wvavYLM">
+              Creating Objects</a> by Costigan-Stephen (<a
+              href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
       </div>
     </section>
 
