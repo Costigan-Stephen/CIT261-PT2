@@ -42,6 +42,15 @@ header {
     list-style: none;
 }
 
+.codeBlock {
+    margin: 0 50px;
+    padding: 15px 30px;
+    background-color: $code;
+    color: $codetext;
+    border: 1pt $header solid;
+    list-style: none;
+}
+
 .titleHighlight {
     margin: 0 50px;
     padding: 15px 30px;

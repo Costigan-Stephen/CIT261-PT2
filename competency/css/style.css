@@ -217,6 +217,11 @@ p {
   text-align: right;
 }
 
+.comment {
+  display: inline;
+  color: #00d400;
+}
+
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .tab {
@@ -256,6 +261,15 @@ header {
   margin: 0 50px;
   padding: 15px 30px;
   background-color: #cdcdcd;
+  border: 1pt #475d78 solid;
+  list-style: none;
+}
+
+.codeBlock {
+  margin: 0 50px;
+  padding: 15px 30px;
+  background-color: #071109;
+  color: #fff;
   border: 1pt #475d78 solid;
   list-style: none;
 }

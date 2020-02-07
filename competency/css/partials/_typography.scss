@@ -96,3 +96,8 @@ p {
 .textRight {
     text-align: right;
 }
+
+.comment {
+    display: inline;
+    color: $comment;
+}

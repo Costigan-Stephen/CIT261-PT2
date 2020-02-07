@@ -4,13 +4,20 @@
 $gray: #F5F5F5;
 $header: #475d78;
 $footer: #18283d;
+
 $hover: #081424;
 $hoverText: #009933;
 $hoverHighlight: #00b51e;
 $current: #31445c;
+
 $highlight: #cdcdcd;
 $titleHighlight: rgba(255, 255, 255, 0.6);
+
 $headerDarken: rgba(0, 0, 0, 0.3);
+
+$comment: #00d400;
+$code: #071109;
+$codetext: #fff;
 
 .gray {
     background-color: $gray;

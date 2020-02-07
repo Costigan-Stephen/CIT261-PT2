@@ -45,7 +45,71 @@
       <div class="paragraph">
         <h2 id="lesson5">LESSON 5</h2><br />
         <h5>LOCAL STORAGE API, STORING AND RETRIEVING SIMPLE DATA, ARRAYS, ASSOCIATIVE ARRAYS, AND OBJECTS</h5>
+        <p>
+          So there's some good fun to be had with Local Storage API's, but first we need to understand what they are.
+          There are primarily 2 variations of that storage. First, Local Storage (obviously), secondly Session Storage.
+          Both Local Storage and Session Storage serve different purposes and can store up to 5 MB of text. That may not
+          seem like much, but when you consider that 1 character is equal to 1 byte, you realize that 5MB is about 5
+          Million characters. When you consider that the average book has about 350 words a page (1500 to 1800
+          characters per page), that's only about 400,000 - 500,000 characters (bytes), on average, which is about a
+          tenth of the storage that either Local or Session storage provide.</p>
 
+        <p>So, what is Session Storage, and how does it differ from Local Storage? Simply put, Session storage is
+          information that is stored only during your current session of browsing. This could be something like your
+          shopping cart on a website or field entries when registering for something. Local storage, on the other hand,
+          is information that exists beyond your current session. This can be just about anything, but a good example
+          might be the chrome function that auto fills your information or remembers your passwords when you allow it
+          to.</p>
+
+        <p>It's important to know that the commands for Local Storage and Session Storage are completely
+          interchangeable, which is nice, so as we go through I will introduce both of them, but focus entirely on only
+          one of them for the sake of simplicity. It's also worth noting that this will tie in to some more JSON, so
+          make sure you check that out first! So what are the commands? Let's have a look!
+          <pre class="codeBlock">
+            (replace Local for Session if you need Session Storage)
+
+            <div class="comment">//Storing Data methods</div>
+            1. localStorage.setItem("key", "value");
+            2. localStorage["key"] = value;
+
+            <div class="comment">//Example:</div>
+            1. localStorage.setItem("Make", "Nissan");
+            2. localStorage["Make"] = "Nissan";
+
+            <div class="comment">//Retrieving Stored Data</div>
+            var myData = localStorage["key"];
+
+            <div class="comment">//Example</div>
+            var Make = localStorage["Make"]; <div class="comment">//Not Nissan, notice the difference</div>
+
+            <div class="comment">//Removing Stored Data</div>
+            localStorage.clear(); <div class="comment">//Removes EVERYTHING! Not advisable</div>
+            localStorage.removeItem("key");</pre><br />
+          You can also store strings using JSON Stringify as an alternative (See the JSON tutorials for more
+          information).
+        </p>
+        <p>I know I said it in there, but I need to reiterate that localStorage.clear is NOT recommended. It's known as
+          a scorched earth approach for a reason because it removes all stored local files, even ones you may not have
+          wanted to remove. Also worth noting, you can store a string of variables using JSON Stringify, or you can
+          store just one value, whatever you desire. For the purposes of our examples here we will only be storing
+          individual values.</p>
+
+        <p>Now that we know the commands, let's mess with it a little bit. First, let's focus primarily on storing data.
+          After that we'll look at setting specific keys to retrieve and manipulate data.
+          <p class="codepen" data-height="380" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="WNvNPeq"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="WNvNPeq">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/WNvNPeq">
+                WNvNPeq</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </p>
+        <p>Next, let's look at how to store and retrieve data using something called a <i>'key'</i>. You probably
+          noticed that in the previous example we simply used the word <b>key</b> as our <i>key</i>, now we will set a
+          custom <i>key</i> and retrieve information from it or show all stored information using JSON stringify.
+          Let's get into it!</p>
       </div>
     </section>
 
