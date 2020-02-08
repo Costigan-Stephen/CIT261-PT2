@@ -3,6 +3,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url("https://fonts.googleapis.com/css?family=Exo+2|Nanum+Gothic&display=swap");
 .gray {
   background-color: #F5F5F5;
 }
@@ -133,6 +134,7 @@ h4,
 h5,
 h6 {
   display: inline-block;
+  font-family: "Nanum Gothic", sans-serif;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-weight: 300;
@@ -200,7 +202,13 @@ h6 {
 }
 
 p {
+  font-family: "Exo 2", sans-serif;
+  font-size: 14pt;
   margin-top: 0;
+}
+
+li {
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .noShow {
@@ -261,7 +269,7 @@ header {
   margin: 0 50px;
   padding: 15px 30px;
   background-color: #cdcdcd;
-  border: 1pt #475d78 solid;
+  border: 1pt "Nanum Gothic", sans-serif solid;
   list-style: none;
 }
 
@@ -270,7 +278,7 @@ header {
   padding: 15px 30px;
   background-color: #071109;
   color: #fff;
-  border: 1pt #475d78 solid;
+  border: 1pt "Nanum Gothic", sans-serif solid;
   list-style: none;
 }
 
