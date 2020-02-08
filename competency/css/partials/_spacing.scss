@@ -57,6 +57,10 @@ header {
     background-color: $titleHighlight;
     list-style: none;
     margin-bottom: 10%;
+
+    li {
+        list-style-type: none;
+    }
 }
 
 p {

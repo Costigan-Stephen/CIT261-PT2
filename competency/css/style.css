@@ -54,7 +54,7 @@ footer {
 }
 
 a:hover {
-  color: #009933;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -78,7 +78,7 @@ a:hover {
 /* Nav Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
-  background-color: #475d78;
+  background-color: #46BFEC;
   text-align: center;
 }
 
@@ -88,7 +88,7 @@ nav ul {
   border: none;
   padding: 0 0 0 0 !important;
   margin: 0 0 0 50px;
-  background-color: #475d78;
+  background-color: #46BFEC;
   height: 74px;
 }
 
@@ -117,12 +117,12 @@ nav li a {
 }
 
 nav a:hover {
-  background-color: #081424;
-  color: #009933;
+  background-color: #3794B6;
+  color: #fff;
 }
 
 nav .current {
-  background-color: #31445c;
+  background-color: #5DD5FF;
 }
 
 /* Typography
@@ -290,6 +290,10 @@ header {
   margin-bottom: 10%;
 }
 
+.titleHighlight li {
+  list-style-type: none;
+}
+
 p {
   margin: 20px 0;
 }
@@ -406,5 +410,9 @@ figcaption a {
   right: 0;
   display: block;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.end {
+  min-height: 200px !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,13 +2,13 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 $gray: #F5F5F5;
-$header: #475d78;
+$header: #46BFEC;
 $footer: #18283d;
 
-$hover: #081424;
-$hoverText: #009933;
+$hover: #3794B6;
+$hoverText: #fff;
 $hoverHighlight: #00b51e;
-$current: #31445c;
+$current: #5DD5FF;
 
 $highlight: #cdcdcd;
 $titleHighlight: rgba(255, 255, 255, 0.6);
@@ -21,7 +21,6 @@ $codetext: #fff;
 
 .gray {
     background-color: $gray;
-    // box-shadow: inset 10px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .whiteText {
