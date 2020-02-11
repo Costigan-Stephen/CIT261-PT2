@@ -6,118 +6,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CIT 261 | HOME</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/nav.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav class="fullwidth">
-      <ul>
-        <li><img src='images/logowhite.png' alt="Uplift Logo"></li>
-        <li class="current"><a href="index.html">HOME</a></li>
-        <li><a href="javascript.html">JAVASCRIPT</a></li>
-        <li><a href="json.html">JSON</a></li>
-        <li><a href="html.html">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="journal.html">JOURNAL</a></li>
+  <div class="menu-icon" id="menu-icon" onclick="toggleNav()">
+    <header>
+      <nav class="fullwidth">
+        <span></span>
+        <ul>
+          <li><img src='images/logowhite.png' alt="Uplift Logo"></li>
+          <li class="current"><a href="index.html">HOME</a></li>
+          <li><a href="javascript.html">JAVASCRIPT</a></li>
+          <li><a href="json.html">JSON</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+    </header>
+    <main class="content">
+      <section class="background fullwidth extraSpace" style="background-image: url('images/background.png');">
+        <div class="paragraph">
+          <div class="titleText">
+            <h1>Stephen Costigan</h1><br />
+            <h3>CIT 261 | Mobile Application Development</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="innerPadding fullwidth ">
+        <div class="paragraph">
+          <div class="left textRight half">
+            <h2>ABOUT</h2><br />
+            <h5>What is this page about?</h5>
+          </div>
+          <p class="right">The objects here are intended to display competency in a series of subjects ranging from HTML
+            to JavaScript
+            to JSON and CSS. All HTML and CSS were created in accordance to the requirements of the lessons so as to
+            present a level of competency required by this course. Any similarities in the latter code with existing
+            code
+            is purely coincidental and the result of serendipity.</p>
+        </div>
+      </section>
+
+      <section class="innerPadding fullwidth gray">
+        <div class="paragraph">
+
+          <div class="center">
+            <h1>TOPIC SELECTOR</h2><br />
+              <h2>PICK A TOPIC TO LEARN MORE ABOUT IT</h2>
+          </div><br />
+
+          <div class="arrange">
+
+            <div class="textRight line" style=" grid-area: left1">
+              <div class="left full">
+                <a href="javascript.html">
+                  <h5>JAVASCRIPT</h5>
+                </a><br />
+                <h6>LOOPS, ARRAYS, OBJECTS AND EVENTS</h6>
+                <p>Covers Lessons 1, 2, and 9</p>
+              </div>
+              <a href="javascript.html"><img class="right" src="images/icons/js.png"></a>
+            </div>
+
+            <div class="line" style="grid-area: right1">
+              <div class="right full">
+                <a href="html.html">
+                  <h5>HTML</h5>
+                </a><br />
+                <h6>LAYOUT ELEMENTS AND STORAGE</h6>
+                <p>Covers Lessons 5, 6, and 10</p>
+              </div>
+              <a href="html.html"><img class="left" src="images/icons/html.png"></a>
+            </div>
+
+            <div class="textRight line" style="grid-area: left2">
+              <div class="left full">
+                <a href="css.html">
+                  <h5>CSS</h5>
+                </a><br />
+                <h6>LAYOUT DESIGN AND OBJECTS</h6>
+                <p>Lessons 7, 8, 11, 12, and 13.</p>
+              </div>
+              <a href="css.html"><img class="right" src="images/icons/css.png"></a>
+            </div>
+
+            <div class="line" style="grid-area: right2">
+              <div class="right full">
+                <a href="json.html">
+                  <h5>JSON</h5>
+                </a><br />
+                <h6>STRINGS AND STORAGE</h6>
+                <p>Covers Lessons 3, and 4</p>
+              </div>
+              <a href="json.html"><img class="left" src="images/icons/json.png"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="background fullwidth blackOverlay end" style="background-image: url('images/background.png');">
+      </section>
+
+    </main>
+    <footer class="fullwidth">
+      <ul class="social">
+        <li><a href="index.html">HOME</a>&nbsp;|</li>
+        <li>&nbsp;<a href="javascript.html">JAVASCRIPT</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="json.html">JSON</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="html.html">HTML</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="css.html">CSS</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="journal.html">JOURNAL</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="background fullwidth" style="background-image: url('images/background.png');">
-      <div class="paragraph">
-        <div class="titleText">
-          <h1>Stephen Costigan</h1><br />
-          <h3>CIT 261 | Mobile Application Development</h3>
-        </div>
-      </div>
-    </section>
-
-    <section class="innerPadding fullwidth ">
-      <div class="paragraph">
-        <div class="left textRight half">
-          <h2>ABOUT</h2><br />
-          <h5>What is this page about?</h5>
-        </div>
-        <p class="right">The objects here are intended to display competency in a series of subjects ranging from HTML
-          to JavaScript
-          to JSON and CSS. All HTML and CSS were created in accordance to the requirements of the lessons so as to
-          present a level of competency required by this course. Any similarities in the latter code with existing code
-          is purely coincidental and the result of serendipity.</p>
-      </div>
-    </section>
-
-    <section class="innerPadding fullwidth gray">
-      <div class="paragraph">
-
-        <div class="center">
-          <h1>TOPIC SELECTOR</h2><br />
-            <h2>PICK A TOPIC TO LEARN MORE ABOUT IT</h2>
-        </div><br />
-
-        <div class="arrange">
-
-          <div class="textRight" style=" grid-area: left1">
-            <div class="left full">
-              <a href="javascript.html">
-                <h5>JAVASCRIPT</h5>
-              </a><br />
-              <h6>LOOPS, ARRAYS, OBJECTS AND EVENTS</h6>
-              <p>Covers Lessons 1, 2, and 9</p>
-            </div>
-            <a href="javascript.html"><img class="right" src="images/icons/js.png"></a>
-          </div>
-
-          <div style="grid-area: right1">
-            <div class="right full">
-              <a href="html.html">
-                <h5>HTML</h5>
-              </a><br />
-              <h6>LAYOUT ELEMENTS AND STORAGE</h6>
-              <p>Covers Lessons 5, 6, and 10</p>
-            </div>
-            <a href="html.html"><img class="left" src="images/icons/html.png"></a>
-          </div>
-
-          <div class="textRight" style="grid-area: left2">
-            <div class="left full">
-              <a href="css.html">
-                <h5>CSS</h5>
-              </a><br />
-              <h6>LAYOUT DESIGN AND OBJECTS</h6>
-              <p>Lessons 7, 8, 11, 12, and 13.</p>
-            </div>
-            <a href="css.html"><img class="right" src="images/icons/css.png"></a>
-          </div>
-
-          <div style="grid-area: right2">
-            <div class="right full">
-              <a href="json.html">
-                <h5>JSON</h5>
-              </a><br />
-              <h6>STRINGS AND STORAGE</h6>
-              <p>Covers Lessons 3, and 4</p>
-            </div>
-            <a href="json.html"><img class="left" src="images/icons/json.png"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="background fullwidth blackOverlay end" style="background-image: url('images/background.png');">
-    </section>
-  </main>
-
-  <footer class="fullwidth">
-    <ul class="social">
-      <li><a href="index.html">HOME</a>&nbsp;|</li>
-      <li>&nbsp;<a href="javascript.html">JAVASCRIPT</a>&nbsp;&nbsp;|</li>
-      <li>&nbsp;<a href="json.html">JSON</a>&nbsp;&nbsp;|</li>
-      <li>&nbsp;<a href="html.html">HTML</a>&nbsp;&nbsp;|</li>
-      <li>&nbsp;<a href="css.html">CSS</a>&nbsp;&nbsp;|</li>
-      <li>&nbsp;<a href="journal.html">JOURNAL</a></li>
-    </ul>
-    &copy; 2020 Stephen Costigan &nbsp; | &nbsp; BYUI Online CIT 261 Mobile App Development &nbsp;
-    <br /><br />
-  </footer>
+      &copy; 2020 Stephen Costigan &nbsp; | &nbsp; BYUI Online CIT 261 Mobile App Development &nbsp;
+      <br /><br />
+    </footer>
+  </div>
 </body>
 
 </html>

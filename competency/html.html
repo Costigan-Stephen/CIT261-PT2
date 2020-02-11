@@ -6,66 +6,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CIT 261 | HOME</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/nav.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav class="fullwidth">
-      <ul>
-        <li><img src='images/logowhite.png' alt="Uplift Logo"></li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="javascript.html">JAVASCRIPT</a></li>
-        <li><a href="json.html">JSON</a></li>
-        <li class="current"><a href="html.html">HTML</a></li class="current">
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="journal.html">JOURNAL</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="background fullwidth blackOverlay" style="background-image: url('images/html.jpg');">
-      <div class="paragraph">
-        <div class="titleText whiteText">
-          <h1>HTML</h1><br />
-          <h4>THIS SECTION DISCUSSES THE LESSONS 5, 6, AND 10. THE TOPICS THAT THIS WILL COVER ARE:</h4>
-          <ul class="titleHighlight">
-            <li><a href="#lesson5">Lesson 5: Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative
-                Arrays, and Objects.</a></li>
-            <li><a href="#lesson6">Lesson 6: DOM Manipulation Using createElement, appendChild, insertBefore,
-                removeChild,
-                etc.</a></li>
-            <li><a href="#lesson10">Lesson 10: HTML5 Tags - Video, Audio, and Canvas.</a></li>
-          </ul>
+  <div class="menu-icon" id="menu-icon" onclick="toggleNav()">
+    <header>
+      <nav class="fullwidth">
+        <span></span>
+        <ul>
+          <li><img src='images/logowhite.png' alt="Uplift Logo"></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="javascript.html">JAVASCRIPT</a></li>
+          <li><a href="json.html">JSON</a></li>
+          <li class="current"><a href="html.html">HTML</a></li class="current">
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="background fullwidth blackOverlay" style="background-image: url('images/html.jpg');">
+        <div class="paragraph">
+          <div class="titleText whiteText">
+            <h1>HTML</h1><br />
+            <h4>THIS SECTION DISCUSSES THE LESSONS 5, 6, AND 10. THE TOPICS THAT THIS WILL COVER ARE:</h4>
+            <ul class="titleHighlight">
+              <li><a href="#lesson5">Lesson 5: Local Storage API, Storing and Retrieving Simple Data, Arrays,
+                  Associative
+                  Arrays, and Objects.</a></li>
+              <li><a href="#lesson6">Lesson 6: DOM Manipulation Using createElement, appendChild, insertBefore,
+                  removeChild,
+                  etc.</a></li>
+              <li><a href="#lesson10">Lesson 10: HTML5 Tags - Video, Audio, and Canvas.</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Lesson 5: Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects. -->
-    <section class="innerPadding fullwidth gray">
-      <div class="paragraph">
-        <h2 id="lesson5">LESSON 5</h2><br />
-        <h5>LOCAL STORAGE API, STORING AND RETRIEVING SIMPLE DATA, ARRAYS, ASSOCIATIVE ARRAYS, AND OBJECTS</h5>
-        <p>
-          So there's some good fun to be had with Local Storage API's, but first we need to understand what they are.
-          There are primarily 2 variations of that storage. First, Local Storage (obviously), secondly Session Storage.
-          Both Local Storage and Session Storage serve different purposes and can store up to 5 MB of text. That may not
-          seem like much, but when you consider that 1 character is equal to 1 byte, you realize that 5MB is about 5
-          Million characters. When you consider that the average book has about 350 words a page (1500 to 1800
-          characters per page), that's only about 400,000 - 500,000 characters (bytes), on average, which is about a
-          tenth of the storage that either Local or Session storage provide.</p>
+      <!--Lesson 5: Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects. -->
+      <section class="innerPadding fullwidth gray">
+        <div class="paragraph">
+          <h2 id="lesson5">LESSON 5</h2><br />
+          <h5>LOCAL STORAGE API, STORING AND RETRIEVING SIMPLE DATA, ARRAYS, ASSOCIATIVE ARRAYS, AND OBJECTS</h5>
+          <p>
+            So there's some good fun to be had with Local Storage API's, but first we need to understand what they are.
+            There are primarily 2 variations of that storage. First, Local Storage (obviously), secondly Session
+            Storage.
+            Both Local Storage and Session Storage serve different purposes and can store up to 5 MB of text. That may
+            not
+            seem like much, but when you consider that 1 character is equal to 1 byte, you realize that 5MB is about 5
+            Million characters. When you consider that the average book has about 350 words a page (1500 to 1800
+            characters per page), that's only about 400,000 - 500,000 characters (bytes), on average, which is about a
+            tenth of the storage that either Local or Session storage provide.</p>
 
-        <p>So, what is Session Storage, and how does it differ from Local Storage? Simply put, Session storage is
-          information that is stored only during your current session of browsing. This could be something like your
-          shopping cart on a website or field entries when registering for something. Local storage, on the other hand,
-          is information that exists beyond your current session. This can be just about anything, but a good example
-          might be the chrome function that auto fills your information or remembers your passwords when you allow it
-          to.</p>
+          <p>So, what is Session Storage, and how does it differ from Local Storage? Simply put, Session storage is
+            information that is stored only during your current session of browsing. This could be something like your
+            shopping cart on a website or field entries when registering for something. Local storage, on the other
+            hand,
+            is information that exists beyond your current session. This can be just about anything, but a good example
+            might be the chrome function that auto fills your information or remembers your passwords when you allow it
+            to.</p>
 
-        <p>It's important to know that the commands for Local Storage and Session Storage are completely
-          interchangeable, which is nice, so as we go through I will introduce both of them, but focus entirely on only
-          one of them for the sake of simplicity. It's also worth noting that this will tie in to some more JSON, so
-          make sure you check that out first! So what are the commands? Let's have a look!
-          <pre class="codeBlock">
+          <p>It's important to know that the commands for Local Storage and Session Storage are completely
+            interchangeable, which is nice, so as we go through I will introduce both of them, but focus entirely on
+            only
+            one of them for the sake of simplicity. It's also worth noting that this will tie in to some more JSON, so
+            make sure you check that out first! So what are the commands? Let's have a look!
+            <pre class="codeBlock">
             (replace Local for Session if you need Session Storage)
 
             <div class="comment">//Storing Data methods</div>
@@ -85,93 +93,99 @@
             <div class="comment">//Removing Stored Data</div>
             localStorage.clear(); <div class="comment">//Removes EVERYTHING! Not advisable</div>
             localStorage.removeItem("key");</pre><br />
-          You can also store strings using JSON Stringify as an alternative (See the JSON tutorials for more
-          information).
-        </p>
-        <p>I know I said it in there, but I need to reiterate that localStorage.clear is NOT recommended. It's known as
-          a scorched earth approach for a reason because it removes all stored local files, even ones you may not have
-          wanted to remove. Also worth noting, you can store a string of variables using JSON Stringify, or you can
-          store just one value, whatever you desire. For the purposes of our examples here we will only be storing
-          individual values.</p>
+            You can also store strings using JSON Stringify as an alternative (See the JSON tutorials for more
+            information).
+          </p>
+          <p>I know I said it in there, but I need to reiterate that localStorage.clear is NOT recommended. It's known
+            as
+            a scorched earth approach for a reason because it removes all stored local files, even ones you may not have
+            wanted to remove. Also worth noting, you can store a string of variables using JSON Stringify, or you can
+            store just one value, whatever you desire. For the purposes of our examples here we will only be storing
+            individual values.</p>
 
-        <p>Now that we know the commands, let's mess with it a little bit. First, let's focus primarily on storing data.
-          After that we'll look at setting specific keys to retrieve and manipulate data. In this first example, we will
-          be focussed entirely on the similarities between local and session storage.</p>
-        <p class="codepen" data-height="380" data-theme-id="default" data-default-tab="js,result"
-          data-user="costigan-stephen" data-slug-hash="WNvNPeq"
-          style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-          data-pen-title="WNvNPeq">
-          <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/WNvNPeq">
-              WNvNPeq</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
-            on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-        <p>Next, let's look at how to store and retrieve data using something called a <i>'key'</i>. You probably
-          noticed that in the previous example we simply used the word <b>key</b> as our <i>key</i>, now we will set a
-          custom <i>key</i> and retrieve information from it or show all stored information using JSON stringify.
-          To make things simple, since the syntax is the same, we'll only work with Local Storage. Without further ado,
-          Let's get into it!</p>
-        <p class="codepen" data-height="510" data-theme-id="default" data-default-tab="js,result"
-          data-user="costigan-stephen" data-slug-hash="QWbWYGW"
-          style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-          data-pen-title="Storing and Retrieving information">
-          <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/QWbWYGW">
-              Storing and Retrieving information</a> by Costigan-Stephen (<a
-              href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
-            on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-      </div>
-    </section>
+          <p>Now that we know the commands, let's mess with it a little bit. First, let's focus primarily on storing
+            data.
+            After that we'll look at setting specific keys to retrieve and manipulate data. In this first example, we
+            will
+            be focussed entirely on the similarities between local and session storage.</p>
+          <p class="codepen" data-height="380" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="WNvNPeq"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="WNvNPeq">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/WNvNPeq">
+                WNvNPeq</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <p>Next, let's look at how to store and retrieve data using something called a <i>'key'</i>. You probably
+            noticed that in the previous example we simply used the word <b>key</b> as our <i>key</i>, now we will set a
+            custom <i>key</i> and retrieve information from it or show all stored information using JSON stringify.
+            To make things simple, since the syntax is the same, we'll only work with Local Storage. Without further
+            ado,
+            Let's get into it!</p>
+          <p class="codepen" data-height="510" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="QWbWYGW"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="Storing and Retrieving information">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/QWbWYGW">
+                Storing and Retrieving information</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </section>
 
-    <!--Lesson 6: DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc. -->
-    <section class="innerPadding fullwidth ">
-      <div class="paragraph">
-        <h2 id="lesson6">LESSON 6</h2><br />
-        <h5>DOM MANIPULATION USING CREATEELEMENT, APPENDCHILD, INSERTBEFORE, REMOVECHILD, ETC</h5>
+      <!--Lesson 6: DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc. -->
+      <section class="innerPadding fullwidth ">
+        <div class="paragraph">
+          <h2 id="lesson6">LESSON 6</h2><br />
+          <h5>DOM MANIPULATION USING CREATEELEMENT, APPENDCHILD, INSERTBEFORE, REMOVECHILD, ETC</h5>
 
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!--Lesson 10: HTML5 Tags - Video, Audio, and Canvas. -->
-    <section class="innerPadding fullwidth gray">
-      <div class="paragraph">
-        <h2 id="lesson10">LESSON 10</h2><br />
-        <h5>HTML5 TAGS - VIDEO, AUDIO, AND CANVAS</h5>
+      <!--Lesson 10: HTML5 Tags - Video, Audio, and Canvas. -->
+      <section class="innerPadding fullwidth gray">
+        <div class="paragraph">
+          <h2 id="lesson10">LESSON 10</h2><br />
+          <h5>HTML5 TAGS - VIDEO, AUDIO, AND CANVAS</h5>
 
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!--REFERENCES -->
-    <section class="background fullwidth blackOverlay" style="background-image: url('images/html.jpg');">
-      <div class="paragraph">
-        <div class="titleText whiteText">
+      <!--REFERENCES -->
+      <section class="background fullwidth blackOverlay" style="background-image: url('images/html.jpg');">
+        <div class="paragraph">
+          <div class="titleText whiteText">
 
-          <h3>USEFUL RESOURCES</h3>
-          <div class="titleHighlight">
-            <ul>
-              <li><a href="https://www.w3schools.com/default.asp">W3 Schools - Excellent Guides and Examples</a></li>
-              <li><a href="https://www.kirupa.com/">Kirupa - Great tutorials in laymans terms</a></li>
-              <li><a href="https://developer.mozilla.org/">Mozilla - "Resources for developers, by developers".</a></li>
-            </ul>
+            <h3>USEFUL RESOURCES</h3>
+            <div class="titleHighlight">
+              <ul>
+                <li><a href="https://www.w3schools.com/default.asp">W3 Schools - Excellent Guides and Examples</a></li>
+                <li><a href="https://www.kirupa.com/">Kirupa - Great tutorials in laymans terms</a></li>
+                <li><a href="https://developer.mozilla.org/">Mozilla - "Resources for developers, by developers".</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="fullwidth">
-    <ul class="social">
-      <li><a href="index.html">HOME</a>&nbsp;|</li>
-      <li>&nbsp;<a href="javascript.html">JAVASCRIPT</a>&nbsp;&nbsp;|</li>
-      <li>&nbsp;<a href="json.html">JSON</a>&nbsp;&nbsp;|</li>
-      <li>&nbsp;<a href="html.html">HTML</a>&nbsp;&nbsp;|</li>
-      <li>&nbsp;<a href="css.html">CSS</a>&nbsp;&nbsp;|</li>
-      <li>&nbsp;<a href="journal.html">JOURNAL</a></li>
-    </ul>
-    &copy; 2020 Stephen Costigan &nbsp; | &nbsp; BYUI Online CIT 261 Mobile App Development &nbsp;
-    <br /><br />
-  </footer>
+    <footer class="fullwidth">
+      <ul class="social">
+        <li><a href="index.html">HOME</a>&nbsp;|</li>
+        <li>&nbsp;<a href="javascript.html">JAVASCRIPT</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="json.html">JSON</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="html.html">HTML</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="css.html">CSS</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="journal.html">JOURNAL</a></li>
+      </ul>
+      &copy; 2020 Stephen Costigan &nbsp; | &nbsp; BYUI Online CIT 261 Mobile App Development &nbsp;
+      <br /><br />
+    </footer>
+  </div>
 </body>
 
 </html>

@@ -42,7 +42,10 @@ figcaption {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+}
+
+.extraSpace {
+    padding-bottom: 100px;
 }
 
 .blackOverlay {
