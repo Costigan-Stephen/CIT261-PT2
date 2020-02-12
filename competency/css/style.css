@@ -55,7 +55,7 @@ footer {
 }
 
 a:hover {
-  color: #fff;
+  color: #f3db00;
   text-decoration: underline;
 }
 
@@ -121,7 +121,7 @@ nav li a {
   nav a:hover {
     background-color: #3794B6;
     text-decoration: none;
-    color: #fff;
+    color: #f3db00;
   }
   nav .current {
     background-color: #5DD5FF;
@@ -408,7 +408,9 @@ p {
 
 .center {
   text-align: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .arrange {

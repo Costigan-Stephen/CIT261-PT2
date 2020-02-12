@@ -141,7 +141,146 @@
         <div class="paragraph">
           <h2 id="lesson6">LESSON 6</h2><br />
           <h5>DOM MANIPULATION USING CREATEELEMENT, APPENDCHILD, INSERTBEFORE, REMOVECHILD, ETC</h5>
+          <p>Do you know what you are looking at right now? A DOM. The DOM of this page is pretty great right? objects
+            that make up my layout are part of a structure, a Document Object Model. What you might not know though is
+            that the DOM
+            can be CHANGED!
+            <u>But what exactly does it mean?</u></p>
 
+          <div class="center"><iframe width="600" height="400" src="https://www.youtube.com/embed/OQSNhk5ICTI?t=76"
+              frameborder="0" ; encrypted-media allowfullscreen></iframe></div>
+          <br>
+          <p>It means that we can reorganize the objects on the layout! Or more than that, make new ones or remove
+            them entirely!</p>
+          <h3>Creating Elements</h1>
+            <p>So let's start with Creating new Elements! It’s easy to create elements, all you need to do is something
+              like this in JavaScript:</p>
+
+            <pre class="codeBlock"><code>
+document.createElement("elementName");
+//Example
+document.createElement(“theFifth”);
+					</pre></code>
+
+            <p>So we create an element called "The Fifth", pun intended, but what now? “theFifth” element does not exist
+              on our layout, we need to
+              go ahead and add it somewhere</p>
+
+            <p>To do that, we need to do something like this</p>
+
+            <pre class="codeBlock"><code>
+&ltscript&gt
+	var newElement = document.createElement(“theFifth”);
+	newElement.textContent = “My name is a pun”;
+	document.body.appendChild(newElement);
+&lt/script&gt
+					</pre></code>
+
+            <p>So, in case you didn't pick up on what just happened, this places our new element at the bottom of the
+              Body element. The Fifth Element now exists as an element of our DOM. This image is <a
+                href="https://www.kirupa.com/html5/creating_dom_elements_and_other_stuff.htm#jsBookContent">based on a
+                Kirupa tutorial</a>, but has been changed slightly from theirs.</p>
+
+            <div class="center"><img src="images/DOM.png"></div>
+            <br />
+            <h3>Removing Elements</h3>
+            <p>Just as it is easy to add elements, it’s just as easy to remove them. To remove “theFifth” we simply need
+              to do the following</p>
+            <pre class="codeBlock"><code>
+document.body.removeChild(newElement);
+					  </pre></code>
+
+            <p>You may notice that we used the variable name from our create element script rather than the element
+              name, this is something worth remembering. Again, you can use this to remove objects that are native to
+              the layout such as h1 etc. Removing an object, it also removes all of it’s children.</p>
+            <br />
+            <h3>Cloning Elements</h3>
+            <p>What if we wanted to clone an element? This is a bit more complicated, but not by much. It requires a
+              little extra explanation. Let’s start
+              by looking at this code: </p>
+
+            <pre class="codeBlock"><code>
+&ltdiv id="footer"&gt
+        &ltdiv class="share"&gt
+            &ltp&gtSomething&lt/p&gt
+            &ltimg alt="#" src="blah.png"/&gt
+        &lt/div&gt
+&lt/div&gt
+ 					
+&ltscript&gt
+        var share = document.querySelector(".share");
+        var shareClone = share.cloneNode(false);  // False means only clone this
+ 
+        document.querySelector("#footer").appendChild(shareClone);
+&lt/script&gt
+					  </pre></code>
+
+            <p>It should look something like this if done correctly. Note, these changes don’t modify the original
+              code.
+            </p>
+            <pre class="codeBlock"><code>
+&ltdiv id="footer"&gt
+        &ltdiv class="share"&gt
+            &ltp&gtSomething&lt/p&gt
+            &ltimg alt="#" src="blah.png"/&gt
+        &lt/div&gt
+        &ltdiv class="shareClone"&gt
+            &ltp&gtSomething&lt/p&gt
+            &ltimg alt="#" src="blah.png"/&gt
+        &lt/div&gt
+&lt/div&gt
+					  </pre></code>
+
+            <p>Looking at this code again, we notice that the cloned element was added, or appended, to the footer
+              using <b>appendChild</b>. Its uses are not limited to cloning, but otherwise is pretty self explanatory.
+            </p>
+            <pre class="codeBlock"><code>
+&ltdiv id="footer"&gt
+        &ltdiv class="share"&gt
+            &ltp&gtSomething&lt/p&gt
+            &ltimg alt="#" src="blah.png"/&gt
+        &lt/div&gt
+&lt/div&gt
+&ltscript&gt
+        var share = document.querySelector(".share");
+        var shareClone = share.cloneNode(false);  // False means only clone this
+ 
+        document.querySelector("#footer").appendChild(shareClone);
+&lt/script&gt
+					</pre></code>
+
+            <p>The native function of <b>insertBefore</b> will allow you to move an element to anywhere you think
+              might look best within
+              the same parent. For example, if I wanted “theFifth” element to be placed before the heading, I would
+              use the following code:</p>
+            <pre class="codeBlock"><code>
+
+        var newElement = document.createElement(“theFifth”);
+        newElement.textContent = “My name is a pun”;
+ 
+        var h1Element = document.querySelector(“h1”);
+        document.body.insertBefore(newElement, h1Element);
+
+					</pre></code>
+            <br />
+            <h3>Putting it all together</h3>
+            <p>So let's play around with creating and removing elements! For this one I decided to go with the topics
+              of this assignment, namely: CSS, JAVASCRIPT, JSON, and HTML.
+              I went a little overboard with this as I wanted the values to rotate between them and utilized session
+              storage for added fun.</p>
+
+            <p>Shall we give it a try? Be my guest! there are 3 buttons to play with an no limits. Go nuts!</p>
+
+            <p class="codepen" data-height="565" data-theme-id="default" data-default-tab="js,result"
+              data-user="costigan-stephen" data-slug-hash="zYGvqXN"
+              style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+              data-pen-title="DOM ADD/REMOVE">
+              <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/zYGvqXN">
+                  DOM ADD/REMOVE</a> by Costigan-Stephen (<a
+                  href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
         </div>
       </section>
 
