@@ -5,7 +5,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @import url("https://fonts.googleapis.com/css?family=Exo+2|Nanum+Gothic&display=swap");
 .gray {
-  background-color: #F5F5F5;
+  background-color: rgba(245, 245, 245, 0.1);
 }
 
 .whiteText {
@@ -483,15 +483,64 @@ figcaption a {
   font-size: 2.6rem;
 }
 
-.background {
+.extraSpace {
+  padding-bottom: 100px;
+}
+
+.end {
+  min-height: 200px !important;
+}
+
+.home {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url("../images/background.png");
 }
 
-.extraSpace {
-  padding-bottom: 100px;
+.javascript {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/javascript.jpg");
+}
+
+.json {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/json.jpg");
+}
+
+.html {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/html.jpg");
+}
+
+.css {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/css.jpg");
+}
+
+.journal {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/journal.jpg");
+}
+
+.opacity {
+  opacity: 0.7;
 }
 
 .blackOverlay {
@@ -510,8 +559,36 @@ figcaption a {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.end {
-  min-height: 200px !important;
+.grayOverlay {
+  background-color: rgba(225, 225, 225, 0.9);
+  position: relative;
+}
+
+.grayOverlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(225, 225, 225, 0.9);
+}
+
+.whiteOverlay {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+.whiteOverlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 850px) {

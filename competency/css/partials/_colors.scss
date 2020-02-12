@@ -1,7 +1,7 @@
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-$gray: #F5F5F5;
+$gray: rgba(245, 245, 245, 0.1);
 $header: #46BFEC;
 $footer: #18283d;
 
@@ -14,6 +14,8 @@ $highlight: #cdcdcd;
 $titleHighlight: rgba(255, 255, 255, 0.6);
 
 $headerDarken: rgba(0, 0, 0, 0.3);
+$headerLighten: rgba(255, 255, 255, 0.9);
+$headerGray: rgba(225, 225, 225, 0.9);
 
 $comment: #00d400;
 $code: #071109;
