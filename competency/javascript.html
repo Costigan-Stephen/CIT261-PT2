@@ -78,14 +78,13 @@
               on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-          <p>Alternatively, for our loop, we could have used:
-            <pre class="codeBlock">
-            for(var i=0,i <= y, i++){
-              cal = Math.pow(x, i);
-              output += x + " &lt;sup&gt;" + i + " &lt;/sup&gt; = " + addCommas(cal) + " &lt;br /&gt;";
-            }</pre>
+          <p>Alternatively, for our loop, we could have used:</p>
+          <pre class="codeBlock">
+for(var i=0,i <= y, i++){
+  cal = Math.pow(x, i);
+  output += x + " &lt;sup&gt;" + i + " &lt;/sup&gt; = " + addCommas(cal) + " &lt;br /&gt;";
+}</pre>
 
-          </p>
           <p>NEXT let's look into <b>Arrays</b>! For this one, let's first create an array and then work
             with the values inside. We will also stringify the array so that we can visualize the array we have created.
           </p>
@@ -133,12 +132,12 @@
             which we will go into in a moment. For now, simply understand that the object we have made can be duplicated
             to make more.
             <pre class="codeBlock">
-            var cars = {
-              Make:"Ford",
-              Model:"Falcon",
-              Year:"2010",
-              Mileage:"80000"
-            };</pre>
+var cars = {
+  Make:"Ford",
+  Model:"Falcon",
+  Year:"2010",
+  Mileage:"80000"
+};</pre>
           </p>
           <p>The above JavaScript initialized and created the object cars and gave it 4 properties of Make, Model, Year,
             and Mileage, which we can fill with input values or duplicate for use with other objects if we so chose. If
@@ -147,11 +146,11 @@
           </p>
           <p>The SECOND method utilizes the Object.create method and looks like this:
             <pre class="codeBlock">
-            var newCar = Object.create(cars);
-                newCar.Make = "Toyota";
-                newCar.Model = "Camry";
-                newCar.Year = "2012";
-                newCar.Mileage = "60000";</pre>
+var newCar = Object.create(cars);
+  newCar.Make = "Toyota";
+  newCar.Model = "Camry";
+  newCar.Year = "2012";
+  newCar.Mileage = "60000";</pre>
           </p>
           <p>You may notice that the new array "newCar" now has the same properties of Make, Model, Year, and Mileage as
             Cars did, but with entirely different values. This can be an effective method of creating a series of values
@@ -163,12 +162,12 @@
           </p>
           <p>Next, the THIRD method utilizes functions to create objects:
             <pre class="codeBlock">
-            function objCar(Make,Model,Year,Mileage) {
-                this.Make = Make;
-                this.Model = Model;
-                this.Year = Year;
-                this.Mileage = Mileage;
-            }</pre>
+function objCar(Make,Model,Year,Mileage) {
+  this.Make = Make;
+  this.Model = Model;
+  this.Year = Year;
+  this.Mileage = Mileage;
+}</pre>
           </p>
           <p>What just happened here is that the object objCar accepted 4 entries of Make, Model, Year, Mileage as
             property values for it's own fields. There are a number of reasons why you might want to copy existing

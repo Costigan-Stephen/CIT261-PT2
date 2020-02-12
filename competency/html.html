@@ -74,27 +74,29 @@
             one of them for the sake of simplicity. It's also worth noting that this will tie in to some more JSON, so
             make sure you check that out first! So what are the commands? Let's have a look!
             <pre class="codeBlock">
-            (replace Local for Session if you need Session Storage)
+(replace Local for Session if you need Session Storage)
 
-            <div class="comment">//Storing Data methods</div>
-            1. localStorage.setItem("key", "value");
-            2. localStorage["key"] = value;
+<div class="comment">//Storing Data methods</div>
+1. localStorage.setItem("key", "value");
+2. localStorage["key"] = value;
 
-            <div class="comment">//Example:</div>
-            1. localStorage.setItem("Make", "Nissan");
-            2. localStorage["Make"] = "Nissan";
+<div class="comment">//Example:</div>
+1. localStorage.setItem("Make", "Nissan");
+2. localStorage["Make"] = "Nissan";
 
-            <div class="comment">//Retrieving Stored Data</div>
-            var myData = localStorage["key"];
+<div class="comment">//Retrieving Stored Data</div>
+var myData = localStorage["key"];
 
-            <div class="comment">//Example</div>
-            var Make = localStorage["Make"]; <div class="comment">//Not Nissan, notice the difference</div>
+<div class="comment">//Example</div>
+var Make = localStorage["Make"]; <div class="comment">//Not Nissan, notice the difference</div>
 
-            <div class="comment">//Removing Stored Data</div>
-            localStorage.clear(); <div class="comment">//Removes EVERYTHING! Not advisable</div>
-            localStorage.removeItem("key");</pre><br />
-            You can also store strings using JSON Stringify as an alternative (See the JSON tutorials for more
-            information).
+<div class="comment">//Removing Stored Data</div>
+localStorage.clear(); <div class="comment">//Removes EVERYTHING! Not advisable</div>
+localStorage.removeItem("key");
+
+You can also store strings using JSON Stringify as an alternative.</pre>
+            <br />
+
           </p>
           <p>I know I said it in there, but I need to reiterate that localStorage.clear is NOT recommended. It's known
             as
