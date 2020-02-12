@@ -629,7 +629,8 @@ figcaption a {
     margin-left: 2px;
     margin-right: 10px;
   }
-  .about {
+  .about,
+  .titleText {
     left: 3px;
     margin-right: 12px;
   }
