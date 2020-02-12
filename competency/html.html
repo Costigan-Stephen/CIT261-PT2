@@ -161,8 +161,7 @@ You can also store strings using JSON Stringify as an alternative.</pre>
             <pre class="codeBlock">
 document.createElement("elementName");
 <div class="comment">//Example</div>
-document.createElement(“theFifth”);
-					</pre>
+document.createElement(“theFifth”);	</pre>
 
             <p>So we create an element called "The Fifth", pun intended, but what now? “theFifth” element does not exist
               on our layout, we need to
@@ -175,8 +174,7 @@ document.createElement(“theFifth”);
 	var newElement = document.createElement(“theFifth”);
 	newElement.textContent = “My name is a pun”;
 	document.body.appendChild(newElement);
-&lt/script&gt
-					</pre>
+&lt/script&gt	</pre>
 
             <p>So, in case you didn't pick up on what just happened, this places our new element at the bottom of the
               Body element. The Fifth Element now exists as an element of our DOM. This image is <a
@@ -212,8 +210,7 @@ document.createElement(“theFifth”);
         var shareClone = share.cloneNode(false); <div class="comment">// False means only clone this</div>
  
         document.querySelector("#footer").appendChild(shareClone);
-&lt/script&gt
-					  </pre>
+&lt/script&gt </pre>
 
             <p>It should look something like this if done correctly. Note, these changes don’t modify the original
               code.
@@ -228,8 +225,7 @@ document.createElement(“theFifth”);
             &ltp&gtSomething&lt/p&gt
             &ltimg alt="#" src="blah.png"/&gt
         &lt/div&gt
-&lt/div&gt
-					  </pre>
+&lt/div&gt </pre>
 
             <p>Looking at this code again, we notice that the cloned element was added, or appended, to the footer
               using <b>appendChild</b>. Its uses are not limited to cloning, but otherwise is pretty self explanatory.
@@ -246,8 +242,7 @@ document.createElement(“theFifth”);
         var shareClone = share.cloneNode(false); <div class="comment">// False means only clone this</div>
  
         document.querySelector("#footer").appendChild(shareClone);
-&lt/script&gt
-					</pre>
+&lt/script&gt	</pre>
 
             <p>The native function of <b>insertBefore</b> will allow you to move an element to anywhere you think
               might look best within
@@ -258,8 +253,7 @@ var newElement = document.createElement(“theFifth”);
 newElement.textContent = “My name is a pun”;
  
 var h1Element = document.querySelector(“h1”);
-document.body.insertBefore(newElement, h1Element);
-					</pre>
+document.body.insertBefore(newElement, h1Element);</pre>
             <br />
             <h3>Putting it all together</h3>
             <p>So let's play around with creating and removing elements! For this one I decided to go with the topics
