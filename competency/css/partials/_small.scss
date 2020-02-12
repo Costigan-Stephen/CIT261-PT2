@@ -32,7 +32,10 @@
 
     p,
     .cp_embed_wrapper {
+        margin-top: 0;
+        margin-bottom: 0;
         margin-left: -7px;
+        font-size: 12pt;
     }
 
     h1,
@@ -93,7 +96,7 @@
             padding: 20px 5px;
             align-items: center;
             justify-self: center;
-            width: 100px;
+            width: 30%;
             height: auto;
         }
     }
