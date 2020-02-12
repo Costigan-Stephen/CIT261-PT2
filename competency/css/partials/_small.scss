@@ -13,6 +13,7 @@
     .titleHighlight,
     .codeBlock {
         margin: 0;
+        margin-left: -7px;
         padding: 0;
     }
 
@@ -27,6 +28,11 @@
         right: -10px;
         width: 93%;
         padding-right: 0px;
+    }
+
+    p,
+    .cp_embed_wrapper {
+        margin-left: -7px;
     }
 
     h1,

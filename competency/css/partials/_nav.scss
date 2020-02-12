@@ -50,11 +50,6 @@ nav {
 
 @media (max-width: $minWidth) {
 
-    .menu-icon {
-        position: fixed;
-        width: auto;
-    }
-
     //Hamburger Icon Elements
     %icon {
         width: 35px;

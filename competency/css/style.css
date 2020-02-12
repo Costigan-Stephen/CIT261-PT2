@@ -129,10 +129,6 @@ nav li a {
 }
 
 @media (max-width: 850px) {
-  .menu-icon {
-    position: fixed;
-    width: auto;
-  }
   span, span:before, span:after {
     width: 35px;
     height: 5px;
@@ -607,6 +603,7 @@ figcaption a {
   .titleHighlight,
   .codeBlock {
     margin: 0;
+    margin-left: -7px;
     padding: 0;
   }
   .titleHighlight {
@@ -619,6 +616,10 @@ figcaption a {
     right: -10px;
     width: 93%;
     padding-right: 0px;
+  }
+  p,
+  .cp_embed_wrapper {
+    margin-left: -7px;
   }
   h1,
   .title {
