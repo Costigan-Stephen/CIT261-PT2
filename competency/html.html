@@ -254,13 +254,11 @@ document.createElement(“theFifth”);
               the same parent. For example, if I wanted “theFifth” element to be placed before the heading, I would
               use the following code:</p>
             <pre class="codeBlock">
-
-        var newElement = document.createElement(“theFifth”);
-        newElement.textContent = “My name is a pun”;
+var newElement = document.createElement(“theFifth”);
+newElement.textContent = “My name is a pun”;
  
-        var h1Element = document.querySelector(“h1”);
-        document.body.insertBefore(newElement, h1Element);
-
+var h1Element = document.querySelector(“h1”);
+document.body.insertBefore(newElement, h1Element);
 					</pre>
             <br />
             <h3>Putting it all together</h3>
