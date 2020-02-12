@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Nanum+Gothic&display=swap');
 
-$header: 'Nanum Gothic',
+$headerFont: 'Nanum Gothic',
 sans-serif;
 $body: 'Exo 2',
 sans-serif;
@@ -15,7 +15,7 @@ h4,
 h5,
 h6 {
     display: inline-block;
-    font-family: $header;
+    font-family: $headerFont;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-weight: 300;
@@ -100,7 +100,7 @@ p {
 }
 
 li {
-    font-family: $header;
+    font-family: $headerFont;
 }
 
 .noShow {

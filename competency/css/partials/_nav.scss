@@ -50,6 +50,11 @@ nav {
 
 @media (max-width: $minWidth) {
 
+    .menu-icon {
+        position: fixed;
+        width: auto;
+    }
+
     //Hamburger Icon Elements
     %icon {
         width: 35px;
@@ -125,7 +130,7 @@ nav {
 
         //Sidebar menu items
         li {
-            background: none !important;
+            background: $invisibleBack !important;
 
             text-align: center;
             font-size: 16pt;
@@ -133,7 +138,6 @@ nav {
             padding: 10px 0;
             margin-left: 20px;
             cursor: pointer;
-            background-color: none;
 
             //Menu item hover effect
             &:hover {
