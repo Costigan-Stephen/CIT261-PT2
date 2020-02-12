@@ -642,6 +642,9 @@ figcaption a {
     padding: 0px;
     clear: both;
   }
+  .full {
+    width: 65%;
+  }
   .half {
     display: block;
     float: none;
