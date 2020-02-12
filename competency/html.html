@@ -156,11 +156,11 @@
             <p>So let's start with Creating new Elements! It’s easy to create elements, all you need to do is something
               like this in JavaScript:</p>
 
-            <pre class="codeBlock"><code>
+            <pre class="codeBlock">
 document.createElement("elementName");
-//Example
+<div class="comment">//Example</div>
 document.createElement(“theFifth”);
-					</pre></code>
+					</pre>
 
             <p>So we create an element called "The Fifth", pun intended, but what now? “theFifth” element does not exist
               on our layout, we need to
@@ -168,13 +168,13 @@ document.createElement(“theFifth”);
 
             <p>To do that, we need to do something like this</p>
 
-            <pre class="codeBlock"><code>
+            <pre class="codeBlock">
 &ltscript&gt
 	var newElement = document.createElement(“theFifth”);
 	newElement.textContent = “My name is a pun”;
 	document.body.appendChild(newElement);
 &lt/script&gt
-					</pre></code>
+					</pre>
 
             <p>So, in case you didn't pick up on what just happened, this places our new element at the bottom of the
               Body element. The Fifth Element now exists as an element of our DOM. This image is <a
@@ -186,9 +186,7 @@ document.createElement(“theFifth”);
             <h3>Removing Elements</h3>
             <p>Just as it is easy to add elements, it’s just as easy to remove them. To remove “theFifth” we simply need
               to do the following</p>
-            <pre class="codeBlock"><code>
-document.body.removeChild(newElement);
-					  </pre></code>
+            <pre class="codeBlock">document.body.removeChild(newElement);</pre>
 
             <p>You may notice that we used the variable name from our create element script rather than the element
               name, this is something worth remembering. Again, you can use this to remove objects that are native to
@@ -199,7 +197,7 @@ document.body.removeChild(newElement);
               little extra explanation. Let’s start
               by looking at this code: </p>
 
-            <pre class="codeBlock"><code>
+            <pre class="codeBlock">
 &ltdiv id="footer"&gt
         &ltdiv class="share"&gt
             &ltp&gtSomething&lt/p&gt
@@ -209,16 +207,16 @@ document.body.removeChild(newElement);
  					
 &ltscript&gt
         var share = document.querySelector(".share");
-        var shareClone = share.cloneNode(false);  // False means only clone this
+        var shareClone = share.cloneNode(false); <div class="comment">// False means only clone this</div>
  
         document.querySelector("#footer").appendChild(shareClone);
 &lt/script&gt
-					  </pre></code>
+					  </pre>
 
             <p>It should look something like this if done correctly. Note, these changes don’t modify the original
               code.
             </p>
-            <pre class="codeBlock"><code>
+            <pre class="codeBlock">
 &ltdiv id="footer"&gt
         &ltdiv class="share"&gt
             &ltp&gtSomething&lt/p&gt
@@ -229,12 +227,12 @@ document.body.removeChild(newElement);
             &ltimg alt="#" src="blah.png"/&gt
         &lt/div&gt
 &lt/div&gt
-					  </pre></code>
+					  </pre>
 
             <p>Looking at this code again, we notice that the cloned element was added, or appended, to the footer
               using <b>appendChild</b>. Its uses are not limited to cloning, but otherwise is pretty self explanatory.
             </p>
-            <pre class="codeBlock"><code>
+            <pre class="codeBlock">
 &ltdiv id="footer"&gt
         &ltdiv class="share"&gt
             &ltp&gtSomething&lt/p&gt
@@ -243,17 +241,17 @@ document.body.removeChild(newElement);
 &lt/div&gt
 &ltscript&gt
         var share = document.querySelector(".share");
-        var shareClone = share.cloneNode(false);  // False means only clone this
+        var shareClone = share.cloneNode(false); <div class="comment">// False means only clone this</div>
  
         document.querySelector("#footer").appendChild(shareClone);
 &lt/script&gt
-					</pre></code>
+					</pre>
 
             <p>The native function of <b>insertBefore</b> will allow you to move an element to anywhere you think
               might look best within
               the same parent. For example, if I wanted “theFifth” element to be placed before the heading, I would
               use the following code:</p>
-            <pre class="codeBlock"><code>
+            <pre class="codeBlock">
 
         var newElement = document.createElement(“theFifth”);
         newElement.textContent = “My name is a pun”;
@@ -261,7 +259,7 @@ document.body.removeChild(newElement);
         var h1Element = document.querySelector(“h1”);
         document.body.insertBefore(newElement, h1Element);
 
-					</pre></code>
+					</pre>
             <br />
             <h3>Putting it all together</h3>
             <p>So let's play around with creating and removing elements! For this one I decided to go with the topics
