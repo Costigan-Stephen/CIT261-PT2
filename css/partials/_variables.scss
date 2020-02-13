@@ -1,0 +1,15 @@
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$screen-width : calc(100% + calc(100vw - 100%));
+$nav-height: 74px;
+$paragraph: 65%;
+$minWidth: 850px;
+$full: 70%;
+$half: $full/2;
+
+@media (max-width: 500px) {
+    $paragraph: 85%;
+    $full: 90%;
+    $half: $full/2;
+}

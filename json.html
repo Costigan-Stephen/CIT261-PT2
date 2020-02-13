@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CIT 261 | HOME</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/jsn.js"></script>
+  <script src="js/nav.js"></script>
+</head>
+
+<body>
+  <div class="menu-icon" id="menu-icon">
+    <header>
+      <nav class="fullwidth">
+        <span onclick="toggleNav()"></span>
+        <ul>
+          <li><img src='images/logowhite.png' alt="Uplift Logo"></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="javascript.html">JAVASCRIPT</a></li>
+          <li class="current"><a href="json.html">JSON</a></li class="current">
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="json fullwidth blackOverlay">
+        <div class="paragraph">
+          <div class="titleText whiteText">
+            <h1 class="title">JSON</h1><br />
+            <h4>THIS SECTION DISCUSSES THE LESSONS 3 AND 4. THE TOPICS THAT THIS WILL COVER ARE:</h4>
+            <ul class="titleHighlight">
+              <li><a href="#lesson3">Lesson 3: JSON Parse, Stringify.</a></li>
+              <li><a href="#lesson4">Lesson 4: Using XML HTTP Request to Consume a JSON Web Service.</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--LESSON 3 JSON PARSE, STRINGIFY -->
+      <section class="innerPadding fullwidth json grayOverlay">
+        <div class="paragraph">
+          <h2 id="lesson3">LESSON 3</h2><br />
+          <h5>JSON PARSE, STRINGIFY</h5>
+          <p>One of the best ways to think of JSON is as an associative array, a series of objects separated by
+            properties such as name, address, or phone number might on a contact. The method of storage differs,
+            however, as does the method for recalling that information. Let us consider the following JSON snippet:
+            <pre class="codeBlock">
+{ 
+  "make":"nissan", 
+  "model":pulsar, 
+  "year":"2001", 
+  "mileage":"120000"
+}</pre><br />
+            From the above code we are able to see a series of stored attributes about a vehicle. JSON has compatability
+            with numerous programming languages and as such we are able to pull information from a number of sources and
+            store it in a JSON object that we can then use in JavaScript.
+          </p>
+
+          <p>This is done by using something called JSON Parse, which allows you to work with JSON strings in your code.
+            The following example expresses a simple use case for using an existing JSON string and working with the
+            ojects in any way you need to. The example below is one that I have created that allows us to modify a JSON
+            element and search for objects in the string.</p>
+          <p class="codepen" data-height="450" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="GRgLdWR" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center;
+          border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="GRgLdWR">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/GRgLdWR">
+                GRgLdWR</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+          <p>On the other hand, JSON Stringify allows you to combine a series of inputs into a JSON element that can be
+            saved and read in future. In the example I've created we will create a JSON object for a car and assign it a
+            series of values. For relevancy, we will include the JSON information from the beginning as our sample data.
+          </p>
+          <p class="codepen" data-height="400" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="qBEwpjL"
+            style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="JSON Stringify">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/qBEwpjL">
+                JSON Stringify</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+
+      </section>
+      <!--LESSON 4 USING XML HTTP REQUEST TO CONSUME A JSON WEB SERVICE -->
+      <section class="innerPadding fullwidth json whiteOverlay">
+        <div class="paragraph">
+          <h2 id="lesson4">LESSON 4</h2><br />
+          <h5>USING XML HTTP REQUEST TO CONSUME A JSON WEB SERVICE</h5>
+          <p>This is where JSON starts to get a little more complicated. The XML HTTP Request is used to refresh
+            information without refreshing a page. This might be useful in a lot of different ways, but a particularly
+            useful one might be stock lists on sites such as Amazon, where a product might have limited stocks and which
+            requires the ability to reload stock quantities without refreshing your session every few seconds. Such an
+            action would not only slow your system, but take away from your experience.</p>
+
+          <p>One way that JSON can do this is by storing that information in an easily accessible place. That data can
+            also be modified relatively simply much like we did above. </p>
+
+          <p class="codepen" data-height="400" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="oNgOyex"
+            style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="XML HTTP REQUEST">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/oNgOyex">
+                XML HTTP REQUEST</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+          <div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--REFERENCES -->
+      <section class="json fullwidth blackOverlay">
+        <div class="paragraph">
+          <div class="titleText whiteText">
+
+            <h3>USEFUL RESOURCES</h3>
+            <div class="titleHighlight">
+              <ul>
+                <li><a href="https://www.w3schools.com/default.asp">W3 Schools - Excellent Guides and Examples</a></li>
+                <li><a href="https://www.kirupa.com/">Kirupa - Great tutorials in laymans terms</a></li>
+                <li><a href="https://developer.mozilla.org/">Mozilla - "Resources for developers, by developers".</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="fullwidth">
+      <ul class="social">
+        <li><a href="index.html">HOME</a>&nbsp;|</li>
+        <li>&nbsp;<a href="javascript.html">JAVASCRIPT</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="json.html">JSON</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="html.html">HTML</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="css.html">CSS</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="journal.html">JOURNAL</a></li>
+      </ul>
+      &copy; 2020 Stephen Costigan &nbsp; | &nbsp; BYUI Online CIT 261 Mobile App Development &nbsp;
+      <br /><br />
+    </footer>
+  </div>
+</body>
+
+</html>

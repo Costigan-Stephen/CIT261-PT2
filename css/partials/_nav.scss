@@ -1,0 +1,172 @@
+/* Nav Bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+nav {
+    background-color: $header;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        border: none;
+        padding: 0 0 0 0 !important;
+        margin: 0 0 0 50px;
+        background-color: $header;
+        height: $nav-height;
+    }
+
+    li {
+        float: left;
+    }
+
+    img {
+        display: flex;
+        width: 50%;
+        height: auto;
+        align-items: center;
+        margin: 20px 30px 0 0;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    @media (min-width: $minWidth) {
+        a:hover {
+            background-color: $hover;
+            text-decoration: none;
+            color: $hoverText;
+        }
+
+        .current {
+            background-color: $current;
+        }
+    }
+}
+
+@media (max-width: $minWidth) {
+
+    //Hamburger Icon Elements
+    %icon {
+        width: 35px;
+        height: 5px;
+        background-color: $footer;
+        border: 1px solid $footer;
+        margin: 3px 0;
+        display: block;
+        position: relative;
+        z-index: 500;
+        transition: 0.5s;
+
+        //Hamburger Icon Hover
+        &-hover {
+            background-color: white;
+            border: 1px solid white;
+        }
+    }
+
+    //Hamburger Icon
+    span {
+        top: 25px;
+        left: 20px;
+        position: fixed;
+        cursor: pointer;
+        @extend %icon;
+
+        &:before,
+        &:after {
+            content: "";
+            @extend %icon;
+        }
+
+        &:before {
+            //Top line of icon
+            top: -16px;
+            left: -1px;
+        }
+
+        &:after {
+            //Bottom line of icon
+            top: -3px;
+            left: -1px;
+        }
+
+        &:hover {
+            //Icon hover effect
+            @extend %icon-hover;
+
+            &:before,
+            &:after {
+                //Icon hover effect for top and bottom components
+                @extend %icon-hover;
+            }
+        }
+    }
+
+    //Sidebar
+    header ul {
+        z-index: 100;
+        background: $header;
+        width: 0;
+        overflow: hidden;
+        height: 101vh;
+        margin: 0;
+        padding: 0;
+        padding-top: 70px;
+        position: fixed;
+
+        top: 0;
+        left: 0;
+        transition: 0.2s;
+
+        //Sidebar menu items
+        li {
+            background: $invisibleBack !important;
+
+            text-align: center;
+            font-size: 16pt;
+            color: #bbb;
+            padding: 10px 0;
+            margin-left: 20px;
+            cursor: pointer;
+
+            //Menu item hover effect
+            &:hover {
+                background: #111;
+            }
+        }
+    }
+
+    //Class added to menu to make it shown
+    .menu-icon.open {
+        %icon {
+            border: 0px solid black;
+            margin: 0;
+        }
+
+        header span {
+            left: 250px;
+
+            //Rotate center line of hamburger icon
+            transform: rotate(-45deg) translate(-9px, 0px);
+
+            //
+            &:after {
+                margin: 8px 1px;
+                transform: rotate(90deg) translate(-9px, 0px);
+            }
+
+            &:before {
+                opacity: 0;
+            }
+        }
+
+        header ul {
+            width: 300px; // This gets animated because of the transition in the ul
+        }
+    }
+}
