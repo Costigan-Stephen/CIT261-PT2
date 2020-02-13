@@ -203,7 +203,7 @@ document.createElement(“theFifth”);	</pre>
  					
 &ltscript&gt
         var share = document.querySelector(".share");
-        var shareClone = share.cloneNode(false); <div class="comment">// False means only clone this</div>
+        var shareClone = share.cloneNode(true); <div class="comment">// False means only clone the div and not what is in it</div>
  
         document.querySelector("#footer").appendChild(shareClone);
 &lt/script&gt </pre>
@@ -235,7 +235,8 @@ document.createElement(“theFifth”);	</pre>
 &lt/div&gt
 &ltscript&gt
         var share = document.querySelector(".share");
-        var shareClone = share.cloneNode(false); <div class="comment">// False means only clone this</div>
+        var shareClone = share.cloneNode(true); <div class="comment">// False means only clone the div and not what is
+          in it</div>
  
         document.querySelector("#footer").appendChild(shareClone);
 &lt/script&gt	</pre>
