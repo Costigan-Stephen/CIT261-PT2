@@ -1,0 +1,27 @@
+/* Objects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.fullwidth {
+    width: 101.5%;
+    float: right;
+    right: 0;
+    left: 0;
+    margin: -10px -10px 0px 0px !important;
+}
+
+#debug {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #ddd;
+    font-family: $consoleFont;
+}
+
+#x {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    color: #fff;
+    background-color: #ededed;
+    border: none;
+}

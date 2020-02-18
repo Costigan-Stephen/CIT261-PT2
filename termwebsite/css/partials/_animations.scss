@@ -1,0 +1,53 @@
+@media (min-width: $minWidth) {
+    .stage5 {
+        position: relative;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        transform: translateX(-350%);
+        transition: all 1s ease;
+    }
+
+    .stage5-active {
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transform: translateX(350%);
+        transition: all 1s ease;
+    }
+}
+
+@media (max-width: $minWidth) {
+    .stage5 {
+        animation-iteration-count: infinite;
+        animation-name: stage5Move;
+        animation-duration: 2s;
+        transition: all 1s ease;
+    }
+}
+
+.stage6 {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: all 2s ease;
+    transform: translateX(0%);
+}
+
+@keyframes stage5Move {
+    0% {
+        transform: translateY(-150%);
+    }
+
+    50% {
+        transform: translateY(250%);
+    }
+
+    100% {
+        transform: translateY(-150%);
+    }
+}
