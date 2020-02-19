@@ -184,12 +184,12 @@
         {
             "id": 37,
             "action": "water.drain",
-            "text": "SURPRISE!"
+            "text": "Alright, so that wasn't as satisfying as I thought."
         },
         {
             "id": 38,
             "action": "water.remove",
-            "text": "SURPRISE!"
+            "text": "At least you're still "
         }
     ]
 }
