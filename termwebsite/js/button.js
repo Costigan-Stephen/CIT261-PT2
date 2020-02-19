@@ -33,6 +33,7 @@ function playsound(audio) {
 }
 
 function increment(element, key) {
+
     var id = parseInt(key);
     var newid = id + 1;
     if (element.id) {
@@ -79,7 +80,7 @@ function failed() {
 }
 
 function readJson(stage) {
-    var i = stage - 1;
+    var i = parseInt(stage) - 1;
     var xhr = new XMLHttpRequest();
     xhr.open(
         "GET",
@@ -95,7 +96,7 @@ function readJson(stage) {
             var notify = JSON.parse(xhr.responseText);
             var action = notify.stages[stage].action;
             localStorage.setItem("action", action);
-            document.getElementById('stringify').innerHTML = JSON.stringify(notify.stages[i].action);
+
             if (notify.stages[i].text.failed) {
                 if (sessionStorage.getItem("failed") >= 1) {
                     changeText(notify.stages[i].text.failed);
@@ -105,6 +106,7 @@ function readJson(stage) {
             } else {
                 changeText(notify.stages[i].text);
             }
+            document.getElementById('stringify').innerHTML = JSON.stringify(notify.stages[i].action);
         }
     }
 }

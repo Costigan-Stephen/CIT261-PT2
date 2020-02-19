@@ -178,7 +178,17 @@
         },
         {
             "id": 36,
-            "action": "water",
+            "action": "water.add",
+            "text": "SURPRISE!"
+        },
+        {
+            "id": 37,
+            "action": "water.drain",
+            "text": "SURPRISE!"
+        },
+        {
+            "id": 38,
+            "action": "water.clear",
             "text": "SURPRISE!"
         }
     ]

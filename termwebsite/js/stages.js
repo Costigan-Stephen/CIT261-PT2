@@ -32,8 +32,8 @@ function getStage(stage) {
         case 'opacity.remove':
             opacity('remove');
             break;
-        case 'water':
-            water();
+        case 'water.add':
+            water('add');
             break;
             // default:
             //     changeText("Button Pressed " + stage + " times!");
@@ -83,6 +83,19 @@ function opacity(param) {
     }
 }
 
-function water() {
+function water(param) {
+    if (param == "add") {
+        var water = document.createElement("DIV");
+        var bubbles = document.createElement("DIV");
+        water.classList.add("water");
+        bubbles.classList.add("bubbles");
+        water.appendChild(bubbles);
+        document.body.appendChild(water);
+    } else {
+        var paras = document.getElementsByClassName("water");
 
+        while (paras[0]) {
+            paras[0].parentNode.removeChild(paras[0]);
+        }
+    }
 }

@@ -9,12 +9,18 @@
     margin: -10px -10px 0px 0px !important;
 }
 
-#debug {
+#debug,
+#stringify {
     position: absolute;
     left: 10px;
     top: 10px;
     color: #ddd;
     font-family: $consoleFont;
+}
+
+#stringify {
+    right: 10px;
+    text-align: right;
 }
 
 #x {
@@ -24,4 +30,13 @@
     color: #fff;
     background-color: #ededed;
     border: none;
+}
+
+@media (max-width: $minWidth) {
+
+    #stringify,
+    #x,
+    #debug {
+        display: none;
+    }
 }
