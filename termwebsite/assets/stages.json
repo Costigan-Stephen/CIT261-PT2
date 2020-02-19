@@ -195,6 +195,11 @@
             "id": 39,
             "action": "none",
             "text": "Alright, back to the drawing board!"
+        },
+        {
+            "id": 40,
+            "action": "none",
+            "text": ""
         }
     ]
 }
