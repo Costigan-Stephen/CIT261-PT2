@@ -179,7 +179,7 @@
         {
             "id": 36,
             "action": "water.add",
-            "text": "SURPRISE!"
+            "text": "Let the waters RISE!"
         },
         {
             "id": 37,
@@ -189,7 +189,12 @@
         {
             "id": 38,
             "action": "water.remove",
-            "text": "At least you're still "
+            "text": "That certainly didn't work... Hmm..."
+        },
+        {
+            "id": 39,
+            "action": "none",
+            "text": "Alright, back to the drawing board!"
         }
     ]
 }
