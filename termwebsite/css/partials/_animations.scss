@@ -53,12 +53,14 @@
     }
 }
 
-.water {
+.water,
+.waterdrain {
+    z-index: 100;
     float: right;
-    width: 100%;
+    width: 102%;
     height: 100%;
     position: absolute;
-    margin: -11px;
+    margin: 0px;
     overflow: hidden;
 }
 
@@ -80,6 +82,26 @@
     width: 100%;
     bottom: -20px;
     animation: wipeskew 5s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
+}
+
+.waterdrain::before {
+    content: "";
+    opacity: 0.3;
+    position: absolute;
+    background: #04acff;
+    width: 100%;
+    bottom: 0;
+    animation: antiwipe 2s cubic-bezier(0.2, 0.6, 0.8, 0.4) backwards;
+}
+
+.waterdrain::after {
+    content: "";
+    opacity: 0.3;
+    position: absolute;
+    background: #04acff;
+    width: 100%;
+    bottom: -20px;
+    animation: antiskew 2s cubic-bezier(0.2, 0.6, 0.8, 0.4) backwards;
 }
 
 .bubbles {
@@ -111,6 +133,56 @@
     background: #fff;
     bottom: 0;
     animation: bubblebefore 10s cubic-bezier(.2, .6, .8, .4) forwards;
+}
+
+@media (max-width: $minWidth) {
+
+    .waterdrain {
+        margin-left: -5px;
+        width: 107.5%;
+    }
+
+    .water {
+        margin-left: -5px;
+        width: 107.5%;
+    }
+}
+
+@keyframes antiwipe {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+@keyframes antiskew {
+    0% {
+        height: 102%;
+    }
+
+    1% {
+        height: 100%;
+    }
+
+    25% {
+        transform: skew(1deg, 1deg);
+    }
+
+    50% {
+        transform: skew(-1deg, -1deg);
+    }
+
+    75% {
+        transform: skew(-1deg, -1deg);
+    }
+
+    100% {
+        height: 0;
+        transform: skew(1deg, 1deg);
+    }
 }
 
 @keyframes wipe {

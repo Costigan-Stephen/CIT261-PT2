@@ -1,4 +1,5 @@
 .button {
+    z-index: 101;
     width: 6.2em;
     height: 6.2em;
     border-radius: 50%;
@@ -57,5 +58,6 @@
     #outer {
         align-items: center;
         justify-content: center;
+        margin-left: 5px;
     }
 }

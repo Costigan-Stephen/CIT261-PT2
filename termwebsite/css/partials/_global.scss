@@ -3,12 +3,12 @@
 $consoleFont: 'Cutive Mono',
 monospace;
 
-html {
-    width: 100%;
-}
+// html {
+//     width: 100%;
+// }
 
 body {
-    width: 100%;
+    width: 99%;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 98vw;
+    width: 99.5vw;
     height: 50px;
     margin: 25px 0;
     padding: 7px 14px;
@@ -42,6 +42,12 @@ body {
     opacity: 0.01;
 }
 
+.fullopacity {
+    z-index: 101;
+    transition: opacity 15s ease;
+    opacity: 0.4;
+}
+
 .opacityfade {
     transition: opacity 1s ease;
     opacity: 1;
@@ -54,9 +60,15 @@ audio {
 @media (max-width: $minWidth) {
 
     #outputDiv {
-        width: 101vw;
+        width: 96vw;
         font-size: 80%;
-        margin-left: 5px;
+        margin-left: 0px;
+        margin-top: 2px;
+    }
+
+    body {
+        margin-left: -5px;
+        margin-right: -25px;
         margin-top: 2px;
     }
 }

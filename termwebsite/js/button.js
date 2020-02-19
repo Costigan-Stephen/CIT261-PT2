@@ -33,15 +33,29 @@ function playsound(audio) {
 }
 
 function increment(element, key) {
-
     var id = parseInt(key);
     var newid = id + 1;
-    if (element.id) {
-        element.id = newid;
+
+    if (localStorage.getItem("len")) {
+        if (newid < localStorage.getItem("len")) {
+            if (element.id) {
+                element.id = newid;
+            } else {
+                element.id = key + 1;
+            }
+            sessionStorage.setItem("id", newid);
+        } else {
+            key = localStorage.getItem("len");
+        }
     } else {
-        element.id = key + 1;
+        if (element.id) {
+            element.id = newid;
+        } else {
+            element.id = key + 1;
+        }
+        sessionStorage.setItem("id", newid);
     }
-    sessionStorage.setItem("id", newid);
+
 }
 
 function reset() {
@@ -96,6 +110,7 @@ function readJson(stage) {
             var notify = JSON.parse(xhr.responseText);
             var action = notify.stages[stage].action;
             localStorage.setItem("action", action);
+            localStorage.setItem("len", notify.stages.length);
 
             if (notify.stages[i].text.failed) {
                 if (sessionStorage.getItem("failed") >= 1) {

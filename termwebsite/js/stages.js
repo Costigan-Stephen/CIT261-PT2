@@ -35,6 +35,12 @@ function getStage(stage) {
         case 'water.add':
             water('add');
             break;
+        case 'water.drain':
+            water('fade');
+            break;
+        case 'water.remove':
+            water('remove');
+            break;
             // default:
             //     changeText("Button Pressed " + stage + " times!");
     }
@@ -87,12 +93,30 @@ function water(param) {
     if (param == "add") {
         var water = document.createElement("DIV");
         var bubbles = document.createElement("DIV");
+        var button = document.querySelector(".frame");
+
+        button.classList.add("fullopacity");
+        buttonClone = button.cloneNode(true); //Clone the div and everything inside of it
+
         water.classList.add("water");
+        water.id = "water";
         bubbles.classList.add("bubbles");
         water.appendChild(bubbles);
         document.body.appendChild(water);
+
+    } else if (param == "fade") {
+        document.getElementById("buttoncase").classList.remove("fullopacity");
+        var paras = document.getElementById("water");
+
+        paras.classList.remove("water");
+        paras.classList.add("waterdrain");
+
+        var paras2 = document.getElementsByClassName("bubbles");
+        while (paras2[0]) {
+            paras2[0].parentNode.removeChild(paras2[0]);
+        }
     } else {
-        var paras = document.getElementsByClassName("water");
+        var paras = document.getElementsByClassName("waterdrain");
 
         while (paras[0]) {
             paras[0].parentNode.removeChild(paras[0]);
