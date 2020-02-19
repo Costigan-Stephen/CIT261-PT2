@@ -49,6 +49,7 @@ function reset() {
     sessionStorage.setItem("failed", "");
     changeText("---");
     document.getElementById('debug').innerHTML = 0;
+    localStorage.setItem("action", "");
 }
 
 function failed() {
@@ -101,12 +102,8 @@ function readJson(stage) {
             } else {
                 changeText(notify.stages[i].text);
             }
-
-            if (notify.stages[i].action != "none") {
-                return notify.stages[i].action;
-            } else {
-                return "";
-            }
+            var action = notify.stages[i].action;
+            localStorage.setItem("action", action);
         }
     }
 }

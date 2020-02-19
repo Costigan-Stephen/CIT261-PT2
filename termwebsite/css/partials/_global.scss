@@ -42,6 +42,11 @@ body {
     opacity: 0.01;
 }
 
+.opacityfade {
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
 audio {
     visibility: hidden;
 }

@@ -2,7 +2,7 @@
     "stages": [{
             "id": 1,
             "action": "none",
-            "text": "Can't you read? The sign said not to press the button!"
+            "text": "Can't you read? The sign said NOT to press the button!"
         },
         {
             "id": 2,
@@ -31,7 +31,7 @@
         }, {
             "id": 7,
             "action": "remove.stage6",
-            "text": "Fine, whatever. what do I know.  Go ahead and press it."
+            "text": "Fine, whatever. What do I know?  Go ahead and press it."
         },
         {
             "id": 8,
@@ -41,7 +41,7 @@
         {
             "id": 9,
             "action": "none",
-            "text": "It's just a big red button after all."
+            "text": "It's just a big red button, after all."
         },
         {
             "id": 10,
@@ -114,60 +114,70 @@
         {
             "id": 23,
             "action": "none",
-            "text": "Seriously, try me! I can do this all day"
+            "text": "...and on and on..."
         },
         {
             "id": 24,
             "action": "none",
-            "text": "..."
+            "text": "...and on and on..."
         },
         {
             "id": 25,
             "action": "none",
-            "text": "Alright, Stop!"
+            "text": "...and on and on..."
         },
         {
             "id": 26,
             "action": "none",
-            "text": "STOP!"
+            "text": "..."
         },
         {
             "id": 27,
             "action": "none",
-            "text": "...I now suspect you to be illiterate."
+            "text": "Alright, Stop!"
         },
         {
             "id": 28,
             "action": "none",
-            "text": "Guess I'll have to stop you myself..."
+            "text": "STOP!"
         },
         {
             "id": 29,
-            "action": "opacity",
-            "text": "Take That!"
+            "action": "opacity.add",
+            "text": "...I now suspect you to be illiterate."
         },
         {
             "id": 30,
-            "action": "none",
-            "text": "Well, that wasn't supposed to happen."
+            "action": "opacity.fade",
+            "text": "Guess I'll have to stop you myself..."
         },
         {
             "id": 31,
-            "action": "none",
-            "text": "I thought I had you that time for sure."
+            "action": "opacity.remove",
+            "text": "Take That!"
         },
         {
             "id": 32,
             "action": "none",
-            "text": "guess it's time to try something completely new..."
+            "text": "Well, that wasn't supposed to happen."
         },
         {
             "id": 33,
             "action": "none",
-            "text": "See how you go with this one!"
+            "text": "I thought I had you that time for sure."
         },
         {
             "id": 34,
+            "action": "none",
+            "text": "Guess it's time to try something completely new..."
+        },
+        {
+            "id": 35,
+            "action": "none",
+            "text": "See how you go with this one!"
+        },
+        {
+            "id": 36,
             "action": "water",
             "text": "SURPRISE!"
         }

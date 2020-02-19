@@ -2,34 +2,38 @@ function getStage(stage) {
     document.getElementById("debug").innerHTML = stage;
 
     readJson(stage);
+    var action = localStorage.getItem("action");
 
-    switch (stage) {
-        case 5:
+    switch (action) {
+        case 'add.stage5': //5
             document.getElementById("buttoncase").classList.add("stage5");
             break;
-        case 6:
+        case 'remove.stage5': //6
             document.getElementById("buttoncase").classList.remove("stage5");
             document.getElementById("buttoncase").classList.remove("stage5-active");
             document.getElementById("buttoncase").classList.add("stage6");
             break;
-        case 8:
+        case 'remove.stage6': //7
             document.getElementById("buttoncase").classList.remove("stage6");
             break;
-        case 17:
+        case 'multibutton.add': //17
             multibutton("add", 5);
             break;
-        case 18:
+        case 'multibutton.remove': //18
             multibutton("remove");
             sessionStorage.setItem("failed", "");
             break;
-        case 29:
+        case 'opacity.add':
             opacity('add');
             break;
-        case 30:
+        case 'opacity.fade':
+            opacity('fade');
+            break;
+        case 'opacity.remove':
             opacity('remove');
             break;
-        case 31:
-            changeText("So... Faster?!");
+        case 'water':
+            water();
             break;
             // default:
             //     changeText("Button Pressed " + stage + " times!");
@@ -71,7 +75,14 @@ function multibutton(param, add) {
 function opacity(param) {
     if (param == "add") {
         document.querySelector(".frame").classList.add("opacity");
-    } else {
+    } else if (param == "fade") {
         document.querySelector(".frame").classList.remove("opacity");
+        document.querySelector(".frame").classList.add("opacityfade");
+    } else {
+        document.querySelector(".frame").classList.remove("opacityfade");
     }
+}
+
+function water() {
+
 }
