@@ -143,27 +143,27 @@
         },
         {
             "id": 29,
-            "action": "opacity.add",
+            "action": "",
             "text": "...I now suspect you to be illiterate."
         },
         {
             "id": 30,
-            "action": "opacity.fade",
+            "action": "none",
             "text": "Guess I'll have to stop you myself..."
         },
         {
             "id": 31,
-            "action": "opacity.remove",
+            "action": "opacity.add",
             "text": "Take That!"
         },
         {
             "id": 32,
-            "action": "none",
+            "action": "opacity.fade",
             "text": "Well, that wasn't supposed to happen."
         },
         {
             "id": 33,
-            "action": "none",
+            "action": "opacity.remove",
             "text": "I thought I had you that time for sure."
         },
         {
