@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+
+$consoleFont: 'Cutive Mono',
+monospace;
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#outputDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    height: 50px;
+    margin: 25px 0;
+    padding: 7px 14px;
+    background-color: #ddd;
+    text-align: center;
+    font-family: $consoleFont;
+}
+
+.center {
+    text-align: center;
+}
+
+.opacity {
+    transition: opacity 0.2s ease;
+    opacity: 0.01;
+}
+
+.opacityfade {
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
+audio {
+    visibility: hidden;
+}
+
+@media (max-width: $minWidth) {
+
+    #outputDiv {
+        width: 101vw;
+        font-size: 80%;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+}

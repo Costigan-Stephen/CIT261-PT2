@@ -1,0 +1,195 @@
+@media (min-width: $minWidth) {
+    .stage5 {
+        z-index: 10;
+        position: relative;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        transform: translateX(-350%);
+        transition: all 1s ease;
+    }
+
+    .stage5-active {
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transform: translateX(350%);
+        transition: all 1s ease;
+    }
+}
+
+@media (max-width: $minWidth) {
+    .stage5 {
+        animation-iteration-count: infinite;
+        animation-name: stage5Move;
+        animation-duration: 2s;
+        transition: all 1s ease;
+    }
+}
+
+.stage6 {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: all 2s ease;
+    transform: translateX(0%);
+}
+
+@keyframes stage5Move {
+    0% {
+        transform: translateY(-150%);
+    }
+
+    50% {
+        transform: translateY(250%);
+    }
+
+    100% {
+        transform: translateY(-150%);
+    }
+}
+
+.water {
+    float: right;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: -11px;
+    overflow: hidden;
+}
+
+.water::before {
+    content: "";
+    opacity: 0.3;
+    position: absolute;
+    background: #04acff;
+    width: 100%;
+    bottom: 0;
+    animation: wipe 5s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
+}
+
+.water::after {
+    content: "";
+    opacity: 0.3;
+    position: absolute;
+    background: #04acff;
+    width: 100%;
+    bottom: -20px;
+    animation: wipeskew 5s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
+}
+
+.bubbles {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bubbles::after {
+    width: 5px;
+    height: 5px;
+    content: '';
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    bottom: 0;
+    animation: bubbleafter 10s cubic-bezier(.2, .6, .8, .4) forwards;
+}
+
+.bubbles::before {
+    width: 10px;
+    height: 10px;
+    content: '';
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    bottom: 0;
+    animation: bubblebefore 10s cubic-bezier(.2, .6, .8, .4) forwards;
+}
+
+@keyframes wipe {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes wipeskew {
+    0% {
+        height: 0;
+        transform: skew(1deg, 1deg);
+    }
+
+    25% {
+        transform: skew(-1deg, -1deg);
+    }
+
+    50% {
+        transform: skew(-1deg, -1deg);
+    }
+
+    70% {
+        transform: skew(1deg, 1deg);
+    }
+
+    99% {
+        height: 100%;
+    }
+
+    100% {
+        height: 102%;
+    }
+}
+
+@keyframes bubblebefore {
+    0% {
+        top: 100%;
+    }
+
+    25% {
+        left: 51%;
+    }
+
+    50% {
+        left: 49%;
+    }
+
+    75% {
+        left: 51%;
+    }
+
+    100% {
+        top: -20%;
+    }
+}
+
+@keyframes bubbleafter {
+    0% {
+        top: 100%;
+    }
+
+    25% {
+        left: 51%;
+    }
+
+    50% {
+        left: 49%;
+    }
+
+    75% {
+        left: 51%;
+    }
+
+    100% {
+        top: -10%;
+    }
+}
