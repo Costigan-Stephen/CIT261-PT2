@@ -188,7 +188,7 @@
         },
         {
             "id": 38,
-            "action": "water.clear",
+            "action": "water.remove",
             "text": "SURPRISE!"
         }
     ]
