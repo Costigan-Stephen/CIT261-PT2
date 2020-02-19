@@ -17,10 +17,10 @@ function getStage(stage) {
             document.getElementById("buttoncase").classList.remove("stage6");
             break;
         case 'multibutton.add': //17
-            multibutton("add", 5);
+            multibutton("add", 5, "clone", 4);
             break;
         case 'multibutton.remove': //18
-            multibutton("remove");
+            multibutton("remove", 0, "clone");
             sessionStorage.setItem("failed", "");
             break;
         case 'opacity.add':
@@ -54,23 +54,31 @@ function move(x) {
     }
 }
 
-function multibutton(param, add) {
+function multibutton(param, add, className, order) {
+    order--;
     if (param == "add") {
         var button = document.querySelector(".frame");
         var buttonClone;
         var innerbutton;
         for (var x = 0; x < add; x++) {
             buttonClone = button.cloneNode(true); //Clone the div and everything inside of it
-            buttonClone.classList.add("clone"); //Add class for identification/deletion
+            buttonClone.classList.add(className); //Add class for identification/deletion
 
             innerbutton = buttonClone.getElementsByClassName("button");
             for (var i = 0; i < innerbutton.length; i++) {
                 innerbutton[i].setAttribute("onClick", "javascript: failed();");
             }
-            document.querySelector("#outer").appendChild(buttonClone);
+            if (x > order) {
+                document.querySelector("#outer").appendChild(buttonClone);
+            } else {
+                document.getElementById("outer").insertBefore(buttonClone, document.getElementById("outer").childNodes[0]);
+            }
+
+
+
         }
     } else {
-        var paras = document.getElementsByClassName("clone");
+        var paras = document.getElementsByClassName(className);
 
         while (paras[0]) {
             paras[0].parentNode.removeChild(paras[0]);
