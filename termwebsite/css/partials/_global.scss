@@ -37,6 +37,11 @@ body {
     text-align: center;
 }
 
+.opacity {
+    transition: opacity 0.2s ease;
+    opacity: 0.01;
+}
+
 audio {
     visibility: hidden;
 }

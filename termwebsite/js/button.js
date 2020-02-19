@@ -20,7 +20,7 @@ function clicked(element) {
         document.getElementById("x").value = "";
     }
     increment(element, key);
-    getStage(parseInt(key), element);
+    getStage(parseInt(key));
 }
 
 function changeText(text) {
@@ -75,4 +75,38 @@ function failed() {
         changeText(". &nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp; .");
     }
 
+}
+
+function readJson(stage) {
+    var i = --stage;
+    var xhr = new XMLHttpRequest();
+    xhr.open(
+        "GET",
+        "https://raw.githubusercontent.com/Costigan-Stephen/CIT261-PT2/master/termwebsite/assets/stages.json",
+        true
+    );
+    xhr.send();
+
+    xhr.addEventListener("readystatechange", processRequest, false);
+
+    function processRequest() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var notify = JSON.parse(xhr.responseText);
+            if (notify.stages[i].text.failed) {
+                if (sessionStorage.getItem("failed") >= 1) {
+                    changeText(notify.stages[i].text.failed);
+                } else {
+                    changeText(notify.stages[i].text.success);
+                }
+            } else {
+                changeText(notify.stages[i].text);
+            }
+
+            if (notify.stages[i].action != "none") {
+                return notify.stages[i].action;
+            } else {
+                return "";
+            }
+        }
+    }
 }

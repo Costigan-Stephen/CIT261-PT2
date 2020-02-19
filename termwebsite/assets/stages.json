@@ -143,18 +143,33 @@
         },
         {
             "id": 29,
-            "action": "none",
-            "text": "TAKE THAT!"
+            "action": "opacity",
+            "text": "Take That!"
         },
         {
             "id": 30,
             "action": "none",
-            "text": "Hmm...."
+            "text": "Well, that wasn't supposed to happen."
         },
         {
             "id": 31,
             "action": "none",
-            "text": "So... Faster?!"
+            "text": "I thought I had you that time for sure."
+        },
+        {
+            "id": 32,
+            "action": "none",
+            "text": "guess it's time to try something completely new..."
+        },
+        {
+            "id": 33,
+            "action": "none",
+            "text": "See how you go with this one!"
+        },
+        {
+            "id": 34,
+            "action": "water",
+            "text": "Surprise!"
         }
     ]
 }
