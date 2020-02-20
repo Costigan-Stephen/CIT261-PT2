@@ -74,6 +74,7 @@ audio {
 canvas {
   z-index: 110;
   display: none;
+  visibility: hidden;
   position: absolute;
   margin-left: 76px;
   width: 300px !important;
