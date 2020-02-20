@@ -77,9 +77,9 @@ function failed() {
     }
     sessionStorage.setItem("failed", failcount);
     if (failcount == 1) {
-        changeText("Nope, that's wrong!");
+        changeText("Ha, got you!");
     } else if (failcount == 2) {
-        changeText("Got you again!");
+        changeText("And again!");
     } else if (failcount == 3) {
         changeText("Wow, 50% wrong so far!");
     } else if (failcount == 4) {
