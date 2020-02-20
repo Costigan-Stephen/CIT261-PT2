@@ -199,6 +199,16 @@
         {
             "id": 40,
             "action": "none",
+            "text": "Seriously, here's a canvas drawing I did!"
+        },
+        {
+            "id": 41,
+            "action": "none",
+            "text": "Waaay cooler than any silly button that's for sure."
+        },
+        {
+            "id": 1000,
+            "action": "none",
             "text": ""
         }
     ]
