@@ -218,28 +218,38 @@
         },
         {
             "id": 44,
-            "action": "draw.remove",
+            "action": "none",
             "text": "You don't deserve my beautiful masterpiece!"
         },
         {
             "id": 45,
+            "action": "draw.remove",
+            "text": "There, it's gone, ARE YOU HAPPY?"
+        },
+        {
+            "id": 46,
             "action": "none",
             "text": "Way to kill my dreams. You've crushed them!"
         },
         {
-            "id": 46,
+            "id": 47,
             "action": "none",
             "text": "CRUSHED!"
         },
         {
-            "id": 47,
+            "id": 48,
             "action": "none",
             "text": "..."
         },
         {
-            "id": 46,
+            "id": 49,
             "action": "none",
             "text": "Do you even know how long you've been pushing this button?"
+        },
+        {
+            "id": 50,
+            "action": "none",
+            "text": "Do you even care? Even a little bit?"
         },
         {
             "id": 1000,

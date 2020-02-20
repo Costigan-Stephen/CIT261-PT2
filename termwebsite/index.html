@@ -20,7 +20,7 @@
     <div id="outer">
         <div id="buttoncase" class="frame" onmouseover="move(this)">
             <div class="inner-frame">
-                <canvas id="canvas"></canvas>
+                <canvas id="canvas" onclick="clicked(document.getElementsByClassName('button')[0])"></canvas>
                 <button type="button" class="button" onclick="clicked(this)"></button>
             </div>
         </div>
@@ -30,7 +30,7 @@
     <div id="outputDiv">---</div>
     <div id="stringify">---</div>
     <footer class="center">
-        <script src="js/canvas.js" onclick="clicked(document.getElementsByClassName('button')[0])"></script>
+        <script src="js/canvas.js"></script>
         &copy; 2020 | Stephen Costigan | <a href="javascript:reset();">Reset</a> | <a
             href="../competency/index.html">Exit</a>
     </footer>
