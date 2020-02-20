@@ -1,0 +1,448 @@
+{
+    "stages": [{
+            "id": 1,
+            "action": "none",
+            "text": "Can't you read? The sign said NOT to press the button!"
+        },
+        {
+            "id": 2,
+            "action": "none",
+            "text": "What part of 'DON'T' was unclear?"
+        },
+        {
+            "id": 3,
+            "action": "none",
+            "text": "Well then..."
+        },
+        {
+            "id": 4,
+            "action": "none",
+            "text": "I feel I may need to make this more difficult..."
+        },
+        {
+            "id": 5,
+            "action": "add.stage5",
+            "text": "How about... NOW!"
+        },
+        {
+            "id": 6,
+            "action": "remove.stage5",
+            "text": "I fear I may have underestimated you..."
+        }, {
+            "id": 7,
+            "action": "remove.stage6",
+            "text": "Fine, whatever. What do I know?  Go ahead and press it."
+        },
+        {
+            "id": 8,
+            "action": "none",
+            "text": "What do I care anyway?"
+        },
+        {
+            "id": 9,
+            "action": "none",
+            "text": "It's just a big red button, after all."
+        },
+        {
+            "id": 10,
+            "action": "none",
+            "text": "Besides, who wants to press a silly button anyway?"
+        },
+        {
+            "id": 11,
+            "action": "none",
+            "text": "..."
+        },
+        {
+            "id": 12,
+            "action": "none",
+            "text": ". . ."
+        },
+        {
+            "id": 13,
+            "action": "none",
+            "text": ". &nbsp; . &nbsp; ."
+        },
+        {
+            "id": 14,
+            "action": "none",
+            "text": ". &nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp; ."
+        },
+        {
+            "id": 15,
+            "action": "none",
+            "text": "...Alright it seems ignoring you isn't changing anything"
+        },
+        {
+            "id": 16,
+            "action": "none",
+            "text": "Time to get creative..."
+        },
+        {
+            "id": 17,
+            "action": "multibutton.add",
+            "text": "BEHOLD!!!"
+        },
+        {
+            "id": 18,
+            "action": "multibutton.remove",
+            "text": {
+                "failed": "Looks like you aren't as clever as you thought!!",
+                "success": "Well... aren't you clever!"
+            }
+        },
+        {
+            "id": 19,
+            "action": "none",
+            "text": "So... Still pressing that button huh?"
+        },
+        {
+            "id": 20,
+            "action": "none",
+            "text": "You think there'll be something at the end of this road."
+        },
+        {
+            "id": 21,
+            "action": "none",
+            "text": "Did you ever consider that there might not be..."
+        },
+        {
+            "id": 22,
+            "action": "none",
+            "text": "That this might just go on and on?"
+        },
+        {
+            "id": 23,
+            "action": "none",
+            "text": "...and on and on..."
+        },
+        {
+            "id": 24,
+            "action": "none",
+            "text": "...and on and on..."
+        },
+        {
+            "id": 25,
+            "action": "none",
+            "text": "...and on and on..."
+        },
+        {
+            "id": 26,
+            "action": "none",
+            "text": "..."
+        },
+        {
+            "id": 27,
+            "action": "none",
+            "text": "Alright, Stop!"
+        },
+        {
+            "id": 28,
+            "action": "none",
+            "text": "STOP!"
+        },
+        {
+            "id": 29,
+            "action": "none",
+            "text": "...I now suspect you to be illiterate."
+        },
+        {
+            "id": 30,
+            "action": "none",
+            "text": "Guess I'll have to stop you myself..."
+        },
+        {
+            "id": 31,
+            "action": "opacity.add",
+            "text": "Take That!"
+        },
+        {
+            "id": 32,
+            "action": "opacity.fade",
+            "text": "Well, that wasn't supposed to happen."
+        },
+        {
+            "id": 33,
+            "action": "opacity.remove",
+            "text": "I thought I had you that time for sure."
+        },
+        {
+            "id": 34,
+            "action": "none",
+            "text": "Guess it's time to try something completely new..."
+        },
+        {
+            "id": 35,
+            "action": "none",
+            "text": "See how you go with this one!"
+        },
+        {
+            "id": 36,
+            "action": "water.add",
+            "text": "Let the waters RISE!"
+        },
+        {
+            "id": 37,
+            "action": "water.drain",
+            "text": "Alright, so that wasn't as satisfying as I thought."
+        },
+        {
+            "id": 38,
+            "action": "water.remove",
+            "text": "That certainly didn't work... Hmm..."
+        },
+        {
+            "id": 39,
+            "action": "none",
+            "text": "Alright, back to the drawing board!"
+        },
+        {
+            "id": 40,
+            "action": "draw.add",
+            "text": "Seriously, here's a canvas drawing I did!"
+        },
+        {
+            "id": 41,
+            "action": "none",
+            "text": "Um... You're not supposed to touch someone elses art..."
+        },
+        {
+            "id": 42,
+            "action": "none",
+            "text": "Didn't anyone ever teach you manners? I mean, really!"
+        },
+        {
+            "id": 43,
+            "action": "none",
+            "text": "You're smudging the pixels! STOP!!"
+        },
+        {
+            "id": 44,
+            "action": "none",
+            "text": "You don't deserve my beautiful masterpiece!"
+        },
+        {
+            "id": 45,
+            "action": "draw.remove",
+            "text": "There, it's gone, ARE YOU HAPPY?"
+        },
+        {
+            "id": 46,
+            "action": "none",
+            "text": "Way to kill my dreams. You've crushed them!"
+        },
+        {
+            "id": 47,
+            "action": "none",
+            "text": "CRUSHED! Just like you wanted..."
+        },
+        {
+            "id": 48,
+            "action": "none",
+            "text": "..."
+        },
+        {
+            "id": 49,
+            "action": "none",
+            "text": "Does my misery somehow appease you?"
+        },
+        {
+            "id": 50,
+            "action": "none",
+            "text": "Or are you too sadistic to even care or notice?"
+        },
+        {
+            "id": 51,
+            "action": "none",
+            "text": "Do you even know how long you've been pushing this button?"
+        },
+        {
+            "id": 52,
+            "action": "none",
+            "text": "You know, studies show that people who press buttons repeatedly are inherently stupid?"
+        },
+        {
+            "id": 53,
+            "action": "none",
+            "text": "I'm not saying you're stupid, just outlining the facts."
+        },
+        {
+            "id": 54,
+            "action": "none",
+            "text": "And since the facts determine you might be stupid, I figured someone needed to tell you."
+        },
+        {
+            "id": 55,
+            "action": "none",
+            "text": "So you could go wherever it is they help those who are stupid."
+        },
+        {
+            "id": 56,
+            "action": "none",
+            "text": "I don't really care, it just seems like something you should have looked at."
+        },
+        {
+            "id": 57,
+            "action": "none",
+            "text": "By someone who knows how to deal with people like you."
+        },
+        {
+            "id": 58,
+            "action": "none",
+            "text": "There are probably herds of them, those of your kind I mean."
+        },
+        {
+            "id": 59,
+            "action": "none",
+            "text": "They probably gallop ignorantly in open fields and eat... grass!"
+        },
+        {
+            "id": 60,
+            "action": "none",
+            "text": "I just realized it sounded like I was calling you a cow, that was unintentional."
+        },
+        {
+            "id": 61,
+            "action": "none",
+            "text": "If there is any truth to it, it really does sound like a great place for you to go."
+        },
+        {
+            "id": 62,
+            "action": "none",
+            "text": "Just think of it. Paradise."
+        },
+        {
+            "id": 63,
+            "action": "none",
+            "text": "..."
+        },
+        {
+            "id": 64,
+            "action": "none",
+            "text": "I'm beginning to wonder if my comment on literacy wasn't right on the money."
+        },
+        {
+            "id": 65,
+            "action": "none",
+            "text": "I mean, you've ignored everything up until now.  Maybe we should test you."
+        },
+        {
+            "id": 66,
+            "action": "none",
+            "text": "Nothing too outlandish, maybe a color based test."
+        },
+        {
+            "id": 67,
+            "action": "none",
+            "text": "I'd hate to make it too difficult on you."
+        },
+        {
+            "id": 68,
+            "action": "none",
+            "text": "Are you ready?"
+        },
+        {
+            "id": 69,
+            "action": "colortest.add",
+            "text": "Ok, press the blue button"
+        },
+        {
+            "id": 70,
+            "action": "colortest.fade",
+            "text": {
+                "failed": "Ha, I knew I could get you to obey me! You CAN be reasoned with after all!",
+                "success": "Yep... I knew you were incapable of listening to me!"
+            }
+        },
+        {
+            "id": 71,
+            "action": "colortest.remove",
+            "text": "Now to more pressing matters..."
+        },
+        {
+            "id": 72,
+            "action": "none",
+            "text": "You see, this button was not supposed to be pressed!"
+        },
+        {
+            "id": 73,
+            "action": "none",
+            "text": "And yet here you are..."
+        },
+        {
+            "id": 74,
+            "action": "none",
+            "text": "Pressing it..."
+        },
+        {
+            "id": 75,
+            "action": "none",
+            "text": "With no real understanding of WHY you were told not to press it."
+        },
+        {
+            "id": 76,
+            "action": "none",
+            "text": "Did you think it was a suggestion? That the text was misleading?"
+        },
+        {
+            "id": 77,
+            "action": "none",
+            "text": "If it alternatively had said 'PRESS', would you have pressed it?"
+        },
+        {
+            "id": 78,
+            "action": "none",
+            "text": "If I were to change it now, you'd press it to spite me."
+        },
+        {
+            "id": 79,
+            "action": "none",
+            "text": "So, let's try a social experiment..."
+        },
+        {
+            "id": 80,
+            "action": "none",
+            "text": "Consider... If you press the button ONE MORE TIME you will DIE!"
+        },
+        {
+            "id": 81,
+            "action": "none",
+            "text": "Wow... Not even a hesitation... You press the button despite the risk of death."
+        },
+        {
+            "id": 82,
+            "action": "none",
+            "text": "Despite the remote chance that by pressing it once more you would have died."
+        },
+        {
+            "id": 83,
+            "action": "none",
+            "text": "You've become a slave to it, pressing the button purely because it is there."
+        },
+        {
+            "id": 84,
+            "action": "none",
+            "text": "Hoping that something will happen if you persist on."
+        },
+        {
+            "id": 85,
+            "action": "none",
+            "text": "That you will reap a reward for the time you have now wasted pressing a forbidden button."
+        },
+        {
+            "id": 86,
+            "action": "none",
+            "text": "At any rate, there is no point to this."
+        },
+        {
+            "id": 87,
+            "action": "none",
+            "text": "Which you will see, if you can ever make it to the end."
+        },
+        {
+            "id": 1000,
+            "action": "none",
+            "text": ""
+        }
+    ]
+}
