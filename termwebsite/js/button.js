@@ -75,7 +75,6 @@ function failed() {
     } else {
         failcount = 1;
     }
-    this.visibility = "hidden";
     sessionStorage.setItem("failed", failcount);
     if (failcount == 1) {
         changeText("Nope, that's wrong!");

@@ -53,6 +53,10 @@ function getStage(stage) {
         case 'colortest.add':
             colortest('add');
             break;
+        case 'colortest.fade':
+            colortest('fade');
+            sessionStorage.setItem("failed", "");
+            break;
         case 'colortest.remove':
             colortest('remove');
             sessionStorage.setItem("failed", "");
@@ -161,7 +165,10 @@ function colortest(param) {
     var canvas = document.getElementById('canvas')
     if (param == "add") {
         multibutton(param, 1, "colortest")
+    } else if (param == "fade") {
+        document.querySelector(".colortest").classList.remove("colortest");
+        document.querySelector(".colortest").style.visibility = hidden;
     } else {
-        multibutton(param, "", "colortest")
+        multibutton(param, "", "opacity")
     }
 }

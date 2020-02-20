@@ -348,7 +348,7 @@
         },
         {
             "id": 70,
-            "action": "colortest.remove",
+            "action": "colortest.fade",
             "text": {
                 "failed": "Ha, I knew I could get you to obey me! You CAN be reasoned with after all!",
                 "success": "Yep... I knew you were incapable of listening to me!"
@@ -356,7 +356,7 @@
         },
         {
             "id": 71,
-            "action": "none",
+            "action": "colortest.remove",
             "text": "Now to more pressing matters..."
         },
         {
