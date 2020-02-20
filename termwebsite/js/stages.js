@@ -55,7 +55,6 @@ function getStage(stage) {
             break;
         case 'colortest.fade':
             colortest('fade');
-            sessionStorage.setItem("failed", "");
             break;
         case 'colortest.remove':
             colortest('remove');
