@@ -41,6 +41,12 @@ function getStage(stage) {
         case 'water.remove':
             water('remove');
             break;
+        case 'draw.add':
+            draw('add');
+            break;
+        case 'draw.remove':
+            draw('remove');
+            break;
             // default:
             //     changeText("Button Pressed " + stage + " times!");
     }
@@ -73,9 +79,6 @@ function multibutton(param, add, className, order) {
             } else {
                 document.getElementById("outer").insertBefore(buttonClone, document.getElementById("outer").childNodes[0]);
             }
-
-
-
         }
     } else {
         var paras = document.getElementsByClassName(className);
@@ -129,5 +132,17 @@ function water(param) {
         while (paras[0]) {
             paras[0].parentNode.removeChild(paras[0]);
         }
+    }
+}
+
+function draw(param) {
+    var canvas = document.getElementById('canvas')
+    if (param == "add") {
+        var canvas = document.getElementById('canvas')
+        canvas.style.display = 'block';
+        canvas.style.visibility = 'visible';
+    } else {
+        canvas.style.display = 'none';
+        canvas.style.visibility = 'hidden';
     }
 }

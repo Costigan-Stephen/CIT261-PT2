@@ -198,13 +198,48 @@
         },
         {
             "id": 40,
-            "action": "none",
+            "action": "draw.add",
             "text": "Seriously, here's a canvas drawing I did!"
         },
         {
             "id": 41,
             "action": "none",
-            "text": "Waaay cooler than any silly button that's for sure."
+            "text": "Made that bad-boy on a canvas just for you!"
+        },
+        {
+            "id": 42,
+            "action": "none",
+            "text": "Waaay cooler than any silly button that's for sure!"
+        },
+        {
+            "id": 43,
+            "action": "none",
+            "text": "Yet you continue to PRESS THE BUTTON..."
+        },
+        {
+            "id": 44,
+            "action": "draw.remove",
+            "text": "You don't deserve my beautiful masterpiece!"
+        },
+        {
+            "id": 45,
+            "action": "none",
+            "text": "Way to kill my dreams. You've crushed them!"
+        },
+        {
+            "id": 46,
+            "action": "none",
+            "text": "CRUSHED!"
+        },
+        {
+            "id": 47,
+            "action": "none",
+            "text": "..."
+        },
+        {
+            "id": 46,
+            "action": "none",
+            "text": "Do you even know how long you've been pushing this button?"
         },
         {
             "id": 1000,
