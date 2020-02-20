@@ -1,82 +1,83 @@
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap");
 
-$consoleFont: "Cutive Mono", monospace;
+$consoleFont: "Cutive Mono",
+monospace;
 
 // html {
 //     width: 100%;
 // }
 
 body {
-  width: 99%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: #f2f2f2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
+    width: 99%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 
 #outputDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 99.5vw;
-  height: 50px;
-  margin: 25px 0;
-  padding: 7px 14px;
-  background-color: #ddd;
-  text-align: center;
-  font-family: $consoleFont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99.5vw;
+    height: 50px;
+    margin: 25px 0;
+    padding: 7px 14px;
+    background-color: #ddd;
+    text-align: center;
+    font-family: $consoleFont;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .opacity {
-  transition: opacity 0.2s ease;
-  opacity: 0.01;
+    transition: opacity 0.2s ease;
+    opacity: 0.01;
 }
 
 .fullopacity {
-  z-index: 101;
-  transition: opacity 15s ease;
-  opacity: 0.4;
+    z-index: 101;
+    transition: opacity 15s ease;
+    opacity: 0.4;
 }
 
 .opacityfade {
-  transition: opacity 1s ease;
-  opacity: 1;
+    transition: opacity 1s ease;
+    opacity: 1;
 }
 
 audio {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 @media (max-width: $minWidth) {
-  #outputDiv {
-    width: 96vw;
-    font-size: 80%;
-    margin-left: 0px;
-    margin-top: 2px;
-  }
+    #outputDiv {
+        width: 96vw;
+        font-size: 80%;
+        margin-left: 0px;
+        margin-top: 2px;
+    }
 
-  body {
-    margin-left: -5px;
-    margin-right: -25px;
-    margin-top: 2px;
-  }
+    body {
+        margin-left: -5px;
+        margin-right: -25px;
+        margin-top: 2px;
+    }
 }
 
 canvas {
-  z-index: 110;
-  display: none;
-  visibility: hidden;
-  position: absolute;
-  margin-left: 76px;
-  width: 300px !important;
-  height: 150px !important;
+    z-index: 110;
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    margin-left: 76px;
+    width: 300px !important;
+    height: 150px !important;
 }
