@@ -204,17 +204,17 @@
         {
             "id": 41,
             "action": "none",
-            "text": "Made that bad-boy on a canvas just for you!"
+            "text": "Um... You're not supposed to touch someone elses art..."
         },
         {
             "id": 42,
             "action": "none",
-            "text": "Waaay cooler than any silly button that's for sure!"
+            "text": "Didn't anyone ever teach you manners? I mean, really!"
         },
         {
             "id": 43,
             "action": "none",
-            "text": "Yet you continue to PRESS THE BUTTON..."
+            "text": "You're smudging the pixels! STOP!!"
         },
         {
             "id": 44,
@@ -234,7 +234,7 @@
         {
             "id": 47,
             "action": "none",
-            "text": "CRUSHED!"
+            "text": "CRUSHED! Just like you wanted..."
         },
         {
             "id": 48,
@@ -244,12 +244,72 @@
         {
             "id": 49,
             "action": "none",
-            "text": "Do you even know how long you've been pushing this button?"
+            "text": "Does my misery somehow appease you?"
         },
         {
             "id": 50,
             "action": "none",
-            "text": "Do you even care? Even a little bit?"
+            "text": "Or are you too sadistic to even care or notice?"
+        },
+        {
+            "id": 51,
+            "action": "none",
+            "text": "Do you even know how long you've been pushing this button?"
+        },
+        {
+            "id": 52,
+            "action": "none",
+            "text": "You know, studies show that people who press buttons repeatedly are inherently stupid?"
+        },
+        {
+            "id": 53,
+            "action": "none",
+            "text": "I'm not saying you're stupid, just outlining the facts."
+        },
+        {
+            "id": 54,
+            "action": "none",
+            "text": "And since the facts determine you might be stupid, I figured someone needed to tell you."
+        },
+        {
+            "id": 55,
+            "action": "none",
+            "text": "So you could go wherever it is they help those who are stupid."
+        },
+        {
+            "id": 56,
+            "action": "none",
+            "text": "I don't really care, it just seems like something you should have looked at."
+        },
+        {
+            "id": 57,
+            "action": "none",
+            "text": "By someone who knows how to deal with people like you."
+        },
+        {
+            "id": 58,
+            "action": "none",
+            "text": "There are probably herds of them, those of your kind I mean."
+        },
+        {
+            "id": 59,
+            "action": "none",
+            "text": "They probably gallop ignorantly in open fields and eat... grass!"
+        },
+        {
+            "id": 60,
+            "action": "none",
+            "text": "I just realized it sounded like I was calling you livestock, that was unintentional."
+        },
+        {
+            "id": 61,
+            "action": "none",
+            "text": "If there is any truth to it, it really does sound like a great place for you to go."
+        },
+        {
+            "id": 62,
+            "action": "none",
+            "text": "Just think of it."
         },
         {
             "id": 1000,
