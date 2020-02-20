@@ -5,6 +5,9 @@ function getStage(stage) {
     var action = localStorage.getItem("action");
 
     switch (action) {
+        case 'none':
+            //Ensure no actions are taken by default
+            break;
         case 'add.stage5': //5
             document.getElementById("buttoncase").classList.add("stage5");
             break;
@@ -46,6 +49,13 @@ function getStage(stage) {
             break;
         case 'draw.remove':
             draw('remove');
+            break;
+        case 'colortest.add':
+            colortest('add');
+            break;
+        case 'colortest.remove':
+            colortest('remove');
+            sessionStorage.setItem("failed", "");
             break;
             // default:
             //     changeText("Button Pressed " + stage + " times!");
@@ -144,5 +154,14 @@ function draw(param) {
     } else {
         canvas.style.display = 'none';
         canvas.style.visibility = 'hidden';
+    }
+}
+
+function colortest(param) {
+    var canvas = document.getElementById('canvas')
+    if (param == "add") {
+        multibutton(param, 1, "colortest")
+    } else {
+        multibutton(param, "", "colortest")
     }
 }

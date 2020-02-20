@@ -337,6 +337,109 @@
             "text": "I'd hate to make it too difficult on you."
         },
         {
+            "id": 68,
+            "action": "none",
+            "text": "Are you ready?"
+        },
+        {
+            "id": 69,
+            "action": "colortest.add",
+            "text": "Ok, press the blue button"
+        },
+        {
+            "id": 70,
+            "action": "colortest.remove",
+            "text": {
+                "failed": "I have no idea how you managed to mess that one up",
+                "success": "It seems you aren't completely stupid after all"
+            }
+        },
+        {
+            "id": 71,
+            "action": "none",
+            "text": "Now to more pressing matters..."
+        },
+        {
+            "id": 72,
+            "action": "none",
+            "text": "You see, this button was not supposed to be pressed!"
+        },
+        {
+            "id": 73,
+            "action": "none",
+            "text": "And yet here you are..."
+        },
+        {
+            "id": 74,
+            "action": "none",
+            "text": "Pressing it..."
+        },
+        {
+            "id": 75,
+            "action": "none",
+            "text": "With no real understanding of WHY you were told not to press it."
+        },
+        {
+            "id": 76,
+            "action": "none",
+            "text": "Did you think it was a suggestion? That the text was misleading?"
+        },
+        {
+            "id": 77,
+            "action": "none",
+            "text": "If it alternatively had said 'PRESS', would you have pressed it?"
+        },
+        {
+            "id": 78,
+            "action": "none",
+            "text": "If I were to change it now, you'd press it to spite me."
+        },
+        {
+            "id": 79,
+            "action": "none",
+            "text": "So, let's try a social experiment..."
+        },
+        {
+            "id": 80,
+            "action": "none",
+            "text": "Consider... If you press the button ONE MORE TIME you will DIE!"
+        },
+        {
+            "id": 81,
+            "action": "none",
+            "text": "Wow... Not even a hesitation... You press the button despite the risk of death."
+        },
+        {
+            "id": 82,
+            "action": "none",
+            "text": "Despite the remote chance that by pressing it once more you would have died."
+        },
+        {
+            "id": 83,
+            "action": "none",
+            "text": "You've become a slave to it, pressing the button purely because it is there."
+        },
+        {
+            "id": 84,
+            "action": "none",
+            "text": "Hoping that something will happen if you persist on."
+        },
+        {
+            "id": 85,
+            "action": "none",
+            "text": "That you will reap a reward for the time you have now wasted pressing a forbidden button."
+        },
+        {
+            "id": 86,
+            "action": "none",
+            "text": "At any rate, there is no point to this."
+        },
+        {
+            "id": 87,
+            "action": "none",
+            "text": "Which you will see, if you can ever make it to the end."
+        },
+        {
             "id": 1000,
             "action": "none",
             "text": ""
