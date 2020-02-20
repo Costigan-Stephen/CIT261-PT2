@@ -442,7 +442,8 @@
         {
             "id": 1000,
             "action": "none",
-            "text": ""
+            "text": "",
+            "_comment": "----------THIS IS THE LAST RECORD, LEFT BLANK ON PURPOSE----------"
         }
     ]
 }
