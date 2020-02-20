@@ -165,6 +165,7 @@ function colortest(param) {
     if (param == "add") {
         multibutton(param, 1, "colortest")
     } else if (param == "fade") {
+        document.querySelector(".colortest").classList.add("hide");
         document.querySelector(".colortest").style.visibility = hidden;
     } else {
         multibutton(param, "", "colortest")
