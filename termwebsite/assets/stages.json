@@ -299,7 +299,7 @@
         {
             "id": 60,
             "action": "none",
-            "text": "I just realized it sounded like I was calling you livestock, that was unintentional."
+            "text": "I just realized it sounded like I was calling you a cow, that was unintentional."
         },
         {
             "id": 61,
@@ -350,8 +350,8 @@
             "id": 70,
             "action": "colortest.remove",
             "text": {
-                "failed": "I have no idea how you managed to mess that one up",
-                "success": "It seems you aren't completely stupid after all"
+                "failed": "Ha, I knew I could get you to obey me! You CAN be reasoned with after all!",
+                "success": "Yep... I knew you were incapable of listening to me!"
             }
         },
         {
