@@ -195,10 +195,84 @@ function objCar(Make,Model,Year,Mileage) {
         <div class="paragraph">
           <h2 id="lesson9">LESSON 9</h2><br />
           <h5>STANDARD JAVASCRIPT EVENTS INCLUDING THOSE FOR MOBILE DEVICES AND ANIMATION AND TRANSITION EVENTS</h5>
+          <p>There are a lot of events we can look at, but in this section we will be focusing a lot JavaScript events
+            that work on Mobile devices. Mozilla Developer tells us that "Touch events consist of three interfaces
+            (<b>Touch</b>, <b>TouchEvent</b> and <b>TouchList</b>)" -<a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Using_Touch_Events">Source</a>. To
+            start, let's look at all the possible event types that are
+            built for touch devices only.</p>
 
+          <pre class="codeBlock">
+touchstart <span class="comment">   //fired when a touch point is placed on the touch surface.</span>
+touchmove <span class="comment">    //fired when a touch point is moved along the touch surface.</span>
+touchend <span class="comment">     //fired when a touch point is removed from the touch surface.</span>
+touchcancel <span class="comment">  //fired when a touch point has been disrupted in an implementation-specific manner 
+                                      (for example, too many touch points are created).</span></pre>
+          <p>Mozilla developer goes a little further than that to explain the touchEvents that are available to a touch
+            device. They are as follows:</p>
+          <pre class="codeBlock">
+touches <span class="comment">        //a list of all of the touch points currently on the screen.</span>
+targetTouches <span class="comment">  //a list of the touch points on the target DOM element.</span>
+changedTouches <span class="comment"> //a list of the touch points whose items depends on the associated event type:</span>
+    >> <b>touchstart</b>  - A list of the touch points that became active with the current event.
+    >> <b>touchmove</b>   - A list of the touch points that have changed since the last event.
+    >> <b>touchend</b>    - A list of the touch points that have been removed from the surface 
+                      (the set of touch points corresponding to fingers no longer touching the surface).</pre>
+          <p>Based on these events a programmer is able to utilize touch gestures to allow a user to interact with a
+            layout and make things happen. For our purposes, we will first look into some basic examples that can be
+            utilized on a mobile device.</p>
+          <p>So, how does that help us? Well, we can attach things called <b>Listeners</b> to elements so that they can
+            be interacted with by the user. These <b>Listeners</b> are useful for recording the events listed above and
+            must be used in this format:</p>
+          <pre class="codeBlock">
+element.addEventListener(event, function, useCapture)</pre>
+          <p>Where <b>Event</b> can be one of those listed above if using a touch device, or can involve the Mouse or
+            Keyboard if using a computer. <b>Function</b> refers to when the <b>Event</b> happens and can include such
+            cases as a drag function or a finger tap etc. Or even, for arguments sake, a finger release. The last
+            parameter, <b>useCapture</b>, is optional and appears as a boolean true or false value, which relates to
+            when the action occurs. Whether the action occurs in what is known as the 'capture phase' or the 'bubbling
+            phase'. But what is a bubbling phase?</p>
+
+          <p><a href="https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-phases">W3 Schools
+              has a great guide</a> to this as it relates to the DOM in which they
+            state:</p>
+          <p class=highlight>The DOM event flow is the process through which the event originates from the DOM Events
+            implementation and is dispatched into a tree. Each event has an event target, a targeted node in the case
+            of the DOM Event flow, toward which the event is dispatched by the DOM Events implementation.</p>
+          <p>A good way to imagine this is using the following image:</p>
+          <img class="center" src="images/eventflow.png" alt="event Flow">
+          <p>As this image, <a
+              href="https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-phases">courtesy of
+              W3 Schools</a>, shows us, the actions are broken down in 3 phases. Namely:<br />
+            <div class="highlight">
+              <b>1. The capture phase:</b> the event is dispatched to the target's ancestors from the root of the
+              tree to
+              the direct parent of the target node.<br />
+              <b>2. The target phase:</b> the event is dispatched to the target node.<br />
+              <b>3. The bubbling phase:</b> the event is dispatched to the target's ancestors from the direct parent
+              of
+              the target node to the root of the tree.<br /></div>
+          </p>
+
+          <p>So lets get into some coding! What if we had some text that changed color when the mouse went over it?
+            Hover effects are pretty fun to do.</p>
+          <p class="codepen" data-height="305" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="eYNvXjK"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="eYNvXjK">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/eYNvXjK">
+                eYNvXjK</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <p>
+            Did you guess right? The random color made that harder to get right, but it also made for a cool effect.
+            Overall, the whole thing is pretty neat huh? The commands used here, as you can see from the example code,
+            utilize the onmouseover and onmouseout to determine when the mouse is and isn't on the text. This can also
+            be done with objects and CSS. And that's it!
+          </p>
         </div>
       </section>
-
       <!--REFERENCES -->
       <section class="javascript fullwidth blackOverlay">
         <div class="paragraph">
@@ -207,9 +281,11 @@ function objCar(Make,Model,Year,Mileage) {
             <h3>USEFUL RESOURCES</h3>
             <div class="titleHighlight">
               <ul>
-                <li><a href="https://www.w3schools.com/default.asp">W3 Schools - Excellent Guides and Examples</a></li>
+                <li><a href="https://www.w3schools.com/default.asp">W3 Schools - Excellent Guides and Examples</a>
+                </li>
                 <li><a href="https://www.kirupa.com/">Kirupa - Great tutorials in laymans terms</a></li>
-                <li><a href="https://developer.mozilla.org/">Mozilla - "Resources for developers, by developers".</a>
+                <li><a href="https://developer.mozilla.org/">Mozilla - "Resources for developers, by
+                    developers".</a>
                 </li>
               </ul>
             </div>
