@@ -3,7 +3,10 @@
 
 nav {
     background-color: $header;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin: auto;
 
     ul {
         list-style-type: none;
@@ -20,11 +23,12 @@ nav {
     }
 
     img {
-        display: flex;
-        width: 50%;
+        position: absolute;
+        left: 15px;
+        width: 120px;
         height: auto;
         align-items: center;
-        margin: 20px 30px 0 0;
+        margin: 18px 40px 0 0;
     }
 
     a {
