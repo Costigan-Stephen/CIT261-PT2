@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CIT 261 | HOME</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/nav.js"></script>
+</head>
+
+<body>
+  <div class="menu-icon" id="menu-icon">
+    <header>
+      <nav class="fullwidth">
+        <span onclick="toggleNav()"></span>
+        <ul>
+          <li><img src='images/logowhite.png' alt="Uplift Logo"></li>
+          <li><a href="index.html">HOME</a></li>
+          <li class="current"><a href="javascript.html">JAVASCRIPT</a></li class="current">
+          <li><a href="json.html">JSON</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="journal.html">JOURNAL</a></li>
+          <li><a href="../termwebsite/index.html">FINAL PROJECT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="javascript fullwidth blackOverlay">
+        <div class="paragraph">
+          <div class="titleText whiteText">
+            <h1>JAVASCRIPT</h1><br />
+            <h4>THIS SECTION DISCUSSES THE LESSONS 1, 2, AND 9. THE TOPICS THAT THIS WILL COVER ARE:</h4>
+            <ul class="titleHighlight">
+              <li><a href="#lesson1">Lesson 1: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays,
+                  Associative Arrays.</a></li>
+              <li><a href="#lesson2">Lesson 2: Object Creation Functions, Inheritance, Properties, Methods,
+                  Instantiation.</a></li>
+              <li><a href="#lesson9">Lesson 9: Standard JavaScript Events Including those for Mobile Devices and
+                  Animation
+                  and Transition Events.</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Lesson 1: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays. -->
+      <section class="innerPadding fullwidth javascript grayOverlay">
+        <div class="paragraph">
+          <h2 id="lesson1">LESSON 1</h2><br />
+          <h5>LOOPS, CONDITIONAL STATEMENTS, FUNCTIONS, VARIABLES, PARAMETERS, ARRAYS, ASSOCIATIVE ARRAYS</h5>
+          <p>This lesson can be best understood by a few short scripts written for a few different outcomes. The first
+            script is written to better look at all elements of the lesson except for Arrays and Associative Arrays,
+            which
+            we will cover hereafter. The script will ask the user to input two numbers, the first number will be raised
+            to
+            the power of the second and it will then display all iterations of that calculation until we reach the
+            answer.
+          </p>
+
+          <p>The individual itterations will be shown so that the repetitions can be seen and understood as they happen
+            rather than simply assuming they were or having to follow them in a script debugger. If you look at the
+            JavaScript function calc(), you will notice the condition asking if the inputs (x and y) are greater than 0.
+            If the statement is true, it will begin a while loop, (which could just as easily be substituted for a For
+            loop) The loop uses a temporary variable of i to increment each time until it is the same as x and then it
+            quits.</p>
+
+          <p>To sum up, this first example includes a <b>loop</b>, <b>conditional statements</b>,
+            <b>functions</b>, <b>variables</b> and <b>parameters</b>.
+          </p>
+
+          <p class="codepen" data-height="500" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="qBEGKVB"
+            style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="qBEGKVB">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/qBEGKVB">
+                qBEGKVB</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <p>Alternatively, for our loop, we could have used:</p>
+          <pre class="codeBlock">
+for(var i=0;i <= y; i++){
+  cal = Math.pow(x, i);
+  output += x + " &lt;sup&gt;" + i + " &lt;/sup&gt; = " + addCommas(cal) + " &lt;br /&gt;";
+}</pre>
+
+          <p>NEXT let's look into <b>Arrays</b>! For this one, let's first create an array and then work
+            with the values inside. We will also stringify the array so that we can visualize the array we have created.
+          </p>
+
+          <p class="codepen" data-height="450" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="OJPYovV"
+            style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="OJPYovV">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/OJPYovV">
+                OJPYovV</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+          <p>Lastly, <b>Associative Arrays</b>! In order to accomplish this one we will be separating the array
+            attributes
+            into separate inputs and then making an assessment based on mileage. I've added some sample data to make
+            this
+            easier, but the idea is that if the mileage is less than 100,000 you pass the assessment, otherwise, it will
+            tell you that you should start saving up for a new car!</p>
+
+          <p>We will stringify this array as well so that it will be easier to visualize. Notice the elements are
+            separated with object names as well as values.</p>
+
+          <p class="codepen" data-height="400" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="Jjoqame"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="Associative Array">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/Jjoqame">
+                Associative Array</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </section>
+
+      <!--Lesson 2: Object Creation Functions, Inheritance, Properties, Methods, Instantiation. -->
+      <section class="innerPadding fullwidth javascript whiteOverlay">
+        <div class="paragraph">
+          <h2 id="lesson2">LESSON 2</h2><br />
+          <h5>OBJECT CREATION FUNCTIONS, INHERITANCE, PROPERTIES, METHODS, INSTANTIATION</h5>
+          <p>After looking at the above lesson examples with associative arrays we might now understand better how we
+            can create an object with pre-set values. For lack of a better example, we will use the car array above as
+            our template object. We will be able to take this first object and make variations of it as we need to,
+            which we will go into in a moment. For now, simply understand that the object we have made can be duplicated
+            to make more.
+            <pre class="codeBlock">
+var cars = {
+  Make:"Ford",
+  Model:"Falcon",
+  Year:"2010",
+  Mileage:"80000"
+};</pre>
+          </p>
+          <p>The above JavaScript initialized and created the object cars and gave it 4 properties of Make, Model, Year,
+            and Mileage, which we can fill with input values or duplicate for use with other objects if we so chose. If
+            we decide that we want to duplicate these properties into another object, there are a few different methods
+            to do this.
+          </p>
+          <p>The SECOND method utilizes the Object.create method and looks like this:
+            <pre class="codeBlock">
+var newCar = Object.create(cars);
+  newCar.Make = "Toyota";
+  newCar.Model = "Camry";
+  newCar.Year = "2012";
+  newCar.Mileage = "60000";</pre>
+          </p>
+          <p>You may notice that the new array "newCar" now has the same properties of Make, Model, Year, and Mileage as
+            Cars did, but with entirely different values. This can be an effective method of creating a series of values
+            based on the same properties. An example of where this might be useful is on occasions where you might want
+            to
+            compare two different cars online in a car buying scenario or otherwise. In these occasions there would
+            likely
+            be more properties to the vehicle such as asking price and condition.
+          </p>
+          <p>Next, the THIRD method utilizes functions to create objects:
+            <pre class="codeBlock">
+function objCar(Make,Model,Year,Mileage) {
+  this.Make = Make;
+  this.Model = Model;
+  this.Year = Year;
+  this.Mileage = Mileage;
+}</pre>
+          </p>
+          <p>What just happened here is that the object objCar accepted 4 entries of Make, Model, Year, Mileage as
+            property values for it's own fields. There are a number of reasons why you might want to copy existing
+            values, but the main point is that these properties are either initialized or populated by the values
+            entered into the function. Bottom line, objects are very useful! being able to associate a property with an
+            object can be a lot better than trying to remember where we stored the value in an array.</p>
+
+          <p>So, let's play with some code! Let's examine all three of the above in the example below:</p>
+          <p class="codepen" data-height="400" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="wvavYLM"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="Creating Objects">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/wvavYLM">
+                Creating Objects</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </section>
+
+      <!--Lesson 9: Standard JavaScript Events Including those for Mobile Devices and Animation and Transition Events. -->
+      <section class="innerPadding fullwidth javascript grayOverlay">
+        <div class="paragraph">
+          <h2 id="lesson9">LESSON 9</h2><br />
+          <h5>STANDARD JAVASCRIPT EVENTS INCLUDING THOSE FOR MOBILE DEVICES AND ANIMATION AND TRANSITION EVENTS</h5>
+          <p>There are a lot of events we can look at, but in this section we will be focusing a lot JavaScript events
+            that work on Mobile devices. Mozilla Developer tells us that "Touch events consist of three interfaces
+            (<b>Touch</b>, <b>TouchEvent</b> and <b>TouchList</b>)" -<a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Using_Touch_Events">Source</a>. To
+            start, let's look at all the possible event types that are
+            built for touch devices only.</p>
+
+          <pre class="codeBlock">
+touchstart <span class="comment">   //fired when a touch point is placed on the touch surface.</span>
+touchmove <span class="comment">    //fired when a touch point is moved along the touch surface.</span>
+touchend <span class="comment">     //fired when a touch point is removed from the touch surface.</span>
+touchcancel <span class="comment">  //fired when a touch point has been disrupted in an implementation-specific manner 
+                                      (for example, too many touch points are created).</span></pre>
+          <p>Mozilla developer goes a little further than that to explain the touchEvents that are available to a touch
+            device. They are as follows:</p>
+          <pre class="codeBlock">
+touches <span class="comment">        //a list of all of the touch points currently on the screen.</span>
+targetTouches <span class="comment">  //a list of the touch points on the target DOM element.</span>
+changedTouches <span class="comment"> //a list of the touch points whose items depends on the associated event type:</span>
+    >> <b>touchstart</b>  - A list of the touch points that became active with the current event.
+    >> <b>touchmove</b>   - A list of the touch points that have changed since the last event.
+    >> <b>touchend</b>    - A list of the touch points that have been removed from the surface 
+                      (the set of touch points corresponding to fingers no longer touching the surface).</pre>
+          <p>Based on these events a programmer is able to utilize touch gestures to allow a user to interact with a
+            layout and make things happen. For our purposes, we will first look into some basic examples that can be
+            utilized on a mobile device.</p>
+          <p>So, how does that help us? Well, we can attach things called <b>Listeners</b> to elements so that they can
+            be interacted with by the user. These <b>Listeners</b> are useful for recording the events listed above and
+            must be used in this format:</p>
+          <pre class="codeBlock">
+element.addEventListener(event, function, useCapture)</pre>
+          <p>Where <b>Event</b> can be one of those listed above if using a touch device, or can involve the Mouse or
+            Keyboard if using a computer. <b>Function</b> refers to when the <b>Event</b> happens and can include such
+            cases as a drag function or a finger tap etc. Or even, for arguments sake, a finger release. The last
+            parameter, <b>useCapture</b>, is optional and appears as a boolean true or false value, which relates to
+            when the action occurs. Whether the action occurs in what is known as the 'capture phase' or the 'bubbling
+            phase'. But what is a bubbling phase?</p>
+
+          <p><a href="https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-phases">W3 Schools
+              has a great guide</a> to this as it relates to the DOM in which they
+            state:</p>
+          <p class=highlight>The DOM event flow is the process through which the event originates from the DOM Events
+            implementation and is dispatched into a tree. Each event has an event target, a targeted node in the case
+            of the DOM Event flow, toward which the event is dispatched by the DOM Events implementation.</p>
+          <p>A good way to imagine this is using the following image:</p>
+          <img class="center" src="images/eventflow.png" alt="event Flow">
+          <p>As this image, <a
+              href="https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-phases">courtesy of
+              W3 Schools</a>, shows us, the actions are broken down in 3 phases. Namely:<br />
+            <div class="highlight">
+              <b>1. The capture phase:</b> the event is dispatched to the target's ancestors from the root of the
+              tree to
+              the direct parent of the target node.<br />
+              <b>2. The target phase:</b> the event is dispatched to the target node.<br />
+              <b>3. The bubbling phase:</b> the event is dispatched to the target's ancestors from the direct parent
+              of
+              the target node to the root of the tree.<br /></div>
+          </p>
+
+          <p>So lets get into some coding! What if we had some text that changed color when the mouse went over it?
+            Hover effects are pretty fun to do.</p>
+          <p class="codepen" data-height="305" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="eYNvXjK"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="eYNvXjK">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/eYNvXjK">
+                eYNvXjK</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <p>
+            Did you guess right? The random color made that harder to get right, but it also made for a cool effect.
+            Overall, the whole thing is pretty neat huh? The commands used here, as you can see from the example code,
+            utilize the onmouseover and onmouseout to determine when the mouse is and isn't on the text. This can also
+            be done with objects and CSS. And that's it!
+          </p>
+        </div>
+      </section>
+      <!--REFERENCES -->
+      <section class="javascript fullwidth blackOverlay">
+        <div class="paragraph">
+          <div class="titleText whiteText">
+
+            <h3>USEFUL RESOURCES</h3>
+            <div class="titleHighlight">
+              <ul>
+                <li><a href="https://www.w3schools.com/default.asp">W3 Schools - Excellent Guides and Examples</a>
+                </li>
+                <li><a href="https://www.kirupa.com/">Kirupa - Great tutorials in laymans terms</a></li>
+                <li><a href="https://developer.mozilla.org/">Mozilla - "Resources for developers, by
+                    developers".</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="fullwidth">
+      <ul class="social">
+        <li><a href="index.html">HOME</a>&nbsp;|</li>
+        <li>&nbsp;<a href="javascript.html">JAVASCRIPT</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="json.html">JSON</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="html.html">HTML</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="css.html">CSS</a>&nbsp;&nbsp;|</li>
+        <li>&nbsp;<a href="journal.html">JOURNAL</a></li>
+      </ul>
+      &copy; 2020 Stephen Costigan &nbsp; | &nbsp; BYUI Online CIT 261 Mobile App Development &nbsp;
+      <br /><br />
+    </footer>
+  </div>
+</body>
+
+</html>

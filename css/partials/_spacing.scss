@@ -1,0 +1,128 @@
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.tab {
+    padding-left: 40px;
+}
+
+.spacer {
+    content: "&nbsp;";
+    padding: 30px;
+}
+
+header {
+    margin-top: 0px !important;
+}
+
+.innerPadding {
+    padding: 40px 30px !important;
+}
+
+#aboutDiv {
+    margin-top: 20px;
+}
+
+.top {
+    top: $nav-height;
+}
+
+.float {
+    float: right;
+    padding-left: 30px;
+}
+
+.paragraph {
+    z-index: 1;
+    width: $paragraph;
+    position: relative;
+    margin-left: 20%;
+}
+
+.highlight {
+    margin: 0 50px;
+    padding: 15px 30px;
+    background-color: $highlight;
+    border: 1pt $header solid;
+    list-style: none;
+}
+
+.codeBlock {
+    margin: 0 50px;
+    padding: 15px 30px;
+    background-color: $code;
+    color: $codetext;
+    border: 1pt $header solid;
+    list-style: none;
+}
+
+.titleHighlight {
+    margin: 0 50px;
+    padding: 15px 30px;
+    background-color: $titleHighlight;
+    list-style: none;
+    margin-bottom: 10%;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+p {
+    margin: 20px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+.titleText {
+    position: relative;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.middleHeight {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    height: 100%;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.arrange {
+    display: grid;
+    grid-template-areas:
+        "left1 . right1"
+        "left2 . right2";
+
+    img {
+        align-items: center;
+        width: 120px;
+        height: auto;
+    }
+
+    h5 {
+        text-decoration: underline;
+        font-weight: 500;
+    }
+}
+
+.full {
+    width: $full;
+}
+
+.half {
+    width: $half;
+}
