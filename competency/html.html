@@ -279,7 +279,31 @@ document.body.insertBefore(newElement, h1Element);</pre>
         <div class="paragraph">
           <h2 id="lesson10">LESSON 10</h2><br />
           <h5>HTML5 TAGS - VIDEO, AUDIO, AND CANVAS</h5>
-
+          <p>So we're left with some of the easier parts of HTML at the tail end of the semester. We'll start by talking
+            about Video elements, which are perhaps the most common. Fortunately, Most websites that make videos these
+            days will give you an embed code, making them relatively easy to share and post. So let's look at some code!
+          </p>
+          <pre class="codeBlock">
+&ltvideo width="320" height="240" controls&gt
+    &ltsource src="movie.mp4" type="video/mp4"&gt
+    &ltsource src="movie.ogg" type="video/ogg"&gt
+    Your browser does not support the video tag.
+&lt/video&gt </pre>
+          <p>The example above is courtesy of <a href="https://www.w3schools.com/html/html5_video.asp">W3 Schools</a>.
+            You may notice in the example that there is a <i>controls</i> attribute. This is optional, but it can also
+            be accompanied by other attributes such as:</p>
+          <pre class="codeBlock"><strong>Attribute   Value     Description</strong>
+autoplay    autoplay  Specifies that the video will start playing as soon as it is ready
+controls    controls  Specifies that video controls should be displayed (such as a play/pause button etc).
+height      pixels    Sets the height of the video player
+loop        loop      Specifies that the video will start over again, every time it is finished
+muted       muted     Specifies that the audio output of the video should be muted poster URL Specifies an image to be shown 
+                      while the video is downloading, or until the user hits the play button
+preload     auto      Specifies if and how the author thinks the video should be loaded when the page loads
+            metadata
+            none 
+src         URL       Specifies the URL of the video file
+width       pixels    Sets the width of the video player </pre>
         </div>
       </section>
 
