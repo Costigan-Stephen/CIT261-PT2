@@ -44,3 +44,18 @@ figcaption {
 .end {
     min-height: 200px !important;
 }
+
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.video {
+    width: 800px;
+    height: 440px;
+    max-width: 90%;
+}

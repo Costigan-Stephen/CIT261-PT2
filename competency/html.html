@@ -178,7 +178,7 @@ document.createElement(“theFifth”);	</pre>
                 href="https://www.kirupa.com/html5/creating_dom_elements_and_other_stuff.htm#jsBookContent">based on a
                 Kirupa tutorial</a>, but has been changed slightly from theirs.</p>
 
-            <div class="center"><img src="images/DOM.png"></div>
+            <div class="center"><img src="images/DOM.png" style="max-width: 80%;"></div>
             <br />
             <h3>Removing Elements</h3>
             <p>Just as it is easy to add elements, it’s just as easy to remove them. To remove “theFifth” we simply need
@@ -236,8 +236,7 @@ document.createElement(“theFifth”);	</pre>
 &lt/div&gt
 &ltscript&gt
         var share = document.querySelector(".share");
-        var shareClone = share.cloneNode(true); <div class="comment">// False means only clone the div and not what is
-          in it</div>
+        var shareClone = share.cloneNode(true); <div class="comment">// False means only clone the div and not what is in it</div>
  
         document.querySelector("#footer").appendChild(shareClone);
 &lt/script&gt	</pre>
@@ -280,8 +279,9 @@ document.body.insertBefore(newElement, h1Element);</pre>
           <h2 id="lesson10">LESSON 10</h2><br />
           <h5>HTML5 TAGS - VIDEO, AUDIO, AND CANVAS</h5>
           <p>So we're left with some of the easier parts of HTML at the tail end of the semester. We'll start by talking
-            about Video elements, which are perhaps the most common. Fortunately, Most websites that make videos these
-            days will give you an embed code, making them relatively easy to share and post. So let's look at some code!
+            about <b>Video</b> elements, which are perhaps the most common. Fortunately, Most websites that make videos
+            these days will give you an embed code, making them relatively easy to share and post. So let's look at some
+            code!
           </p>
           <pre class="codeBlock">
 &ltvideo width="320" height="240" controls&gt
@@ -292,7 +292,7 @@ document.body.insertBefore(newElement, h1Element);</pre>
           <p>The example above is courtesy of <a href="https://www.w3schools.com/html/html5_video.asp">W3 Schools</a>.
             You may notice in the example that there is a <i>controls</i> attribute. This is optional, but it can also
             be accompanied by other attributes such as:</p>
-          <pre class="codeBlock"><strong>Attribute   Value     Description</strong>
+          <pre class="codeBlock"><strong class="comment">Attribute   Value     Description</strong>
 autoplay    autoplay  Specifies that the video will start playing as soon as it is ready
 controls    controls  Specifies that video controls should be displayed (such as a play/pause button etc).
 height      pixels    Sets the height of the video player
@@ -301,9 +301,94 @@ muted       muted     Specifies that the audio output of the video should be mut
                       while the video is downloading, or until the user hits the play button
 preload     auto      Specifies if and how the author thinks the video should be loaded when the page loads
             metadata
-            none 
+            none
 src         URL       Specifies the URL of the video file
 width       pixels    Sets the width of the video player </pre>
+
+          <p>So let's post a video example of this. The following video comes courtesy of YouTube, which has its own
+            embedding tools, and really serves no purpose other than entertainment.</p>
+          <iframe class="center video" src="https://www.youtube.com/embed/4UDnTJcjPhY" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Next, let's look at <b>Audio</b>! Fortunately, audio holds many of the same controls as video, which we
+            will examine below. Consider the following audio segment:</p>
+          <pre class="codeBlock">
+&ltaudio controls&gt
+    &ltsource src="audio.mp3" type="audio/mp3"&gt
+    &ltsource src="audio.ogg" type="audio/ogg"&gt
+    Your browser does not support the audio element.
+&lt/audio&gt </pre>
+          <p>Worth noticing, there are three audio types that are supported by this element, they are:</p>
+          <pre class="codeBlock"><strong class="comment">File Format     Media Type</strong>
+MP3             audio/mpeg
+OGG             audio/ogg
+WAV             audio/wav</pre>
+          <p>You'll also notice from the above code that the audio, like the video, also has the controls property,
+            which is not included by default with an audio tag. If we were to add the audio without controls it would
+            mean the viewer would not have the ability to control it. This might be useful if we are adding sound
+            effects or ambiance to an element. Removing controls hides the element from the DOM.</p>
+          <p>Alternatively, it is highly possible to create an annoying and repetative sound on repeat and autoplay that
+            has no controls to be stopped. I do not advise this method, but it is available to you if that is your
+            desire and you are one of those people who delights in the misery of others. For my example, I decided not
+            to do that and have acquired a nice seagull sound instead, having grown up around the ocean.</p>
+          <audio controls class="center">
+            <source src="assets/seagulls.mp3" type="audio/mpeg">
+            Your browser does not support audio of seagulls.
+          </audio>
+          <p>It's also worth mentioning that the &ltsource&gt tag can define multiple media elements of &ltaudio&gt and
+            &ltvideo&gt.</p>
+          <p>Lastly, the <b>Canvas</b> tag, which is perhaps the most complicated and could realistically have its own
+            lesson devoted to it. It's an extremely elaborate element that can be used to create images, present images,
+            create animated objects, and a number of awesome things. There are a number of properties and methods that
+            we can modify within a canvas. Here are the main properties and methods that can be modified and if you
+            desire to dig deeper feel free to check out <a
+              href="https://www.w3schools.com/graphics/canvas_reference.asp">this awesome W3 Canvas Reference.</a></p>
+          <pre
+            class="codeBlock"><span class="comment">Colors, Styles, and Shadows:</span> - Different ways to create color, whether from gradients or static and including possibility for shadows
+<span class="comment">Rectangles:</span> - Creating rectangles (or squares) using dimensions of height and width. also, choices for different fill you might use with a rectangle.
+<span class="comment">Paths:</span> - Similar to lines, but with this you have the option of filling an area you have drawn over. Also, manipulation of points can change a shape. Also, you can create arcs, which is pretty cool really. We will play with this one later as it is a lot of fun!
+<span class="comment">Transformations:</span> - Your basic rotation, scale, and manipulations of an existing shape.
+<span class="comment">Text:</span> - Self explanatory, you can change the font and style of the text as well.
+<span class="comment">Image Drawing:</span> - Originally thought this would be a canvas for accepting mouse drawings, but turns out it's a place you can put in an image (i.e a painting).
+<span class="comment">Pixel Manipulation:</span> - Similar to rectangles, essentially you are building a shape, but it is entirely a pixel drawing and not a series of defined lines that happen to be filled.
+<span class="comment">Compositing:</span> - Change the transparency or overlap and manipulation of existing images
+<span class="comment">Other:</span> - Some miscellaneous commands such as saving the state and restoring previous save.</pre>
+          <p>It's important to note that each of these headers has a lot of properties or methods to them. The reference
+            link above gives an exhaustive tutorial on each of them. Something interesting with canvas images, which I
+            will be using for the example for this section, is that they can be layered. The example below consists of a
+            number of layered paths with fills and or strokes that creates an image. It's a great explanation of how a
+            canvas can be used to create interesting and intricate designs using simple line manipulation.</p>
+          <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="ExjgyJy"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="Playing with Canvas">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/ExjgyJy">
+                Playing with Canvas</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <p>The canvas example above could have been made using a single variable, but it has been done so that the
+            different components of the face can be easier to follow in the code. The elements overlap based on when
+            they are created, the earlier created elements are at the back and the latter are in front. This heirachy
+            allows a more complicated image to be created.</p>
+          <p>This next example utilizes a tutorial from W3 Schools that helps the user create a working clock using
+            canvas. Unlike the previous example, I did not create this on my own, but followed <a
+              href="https://www.w3schools.com/graphics/canvas_clock.asp">this tutorial</a> in order to
+            create the clock.</p>
+          <p class="codepen" data-height="500" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="JjdyXgW"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="JjdyXgW">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/JjdyXgW">
+                JjdyXgW</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <p>There are so many cool things you can do with canvas and I fear I've only scratched the surface for myself.
+            W3 Schools also offers a tutorial to create a canvas game, demonstrating the dynamic usage of
+            it as an element. I'm not going to include it here, but I'll share a <a
+              href="https://www.w3schools.com/graphics/game_intro.asp">link</a> to it in case there is any
+            interest. And that's it!</p>
         </div>
       </section>
 

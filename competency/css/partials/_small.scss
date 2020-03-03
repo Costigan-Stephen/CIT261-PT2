@@ -3,6 +3,11 @@
         position: relative;
         left: -5px;
         margin: 0 -5px 0 -12px;
+        max-width: 100vw;
+    }
+
+    body {
+        width: 100%;
     }
 
     .innerPadding {
@@ -120,5 +125,10 @@
 
     .paragraph>.textRight {
         text-align: center;
+    }
+
+    .video {
+        width: 500px;
+        height: 200px;
     }
 }
