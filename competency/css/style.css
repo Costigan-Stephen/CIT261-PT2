@@ -26,7 +26,7 @@ html {
 
 body {
   font-size: 1.5em;
-  margin: 10px;
+  margin: 10px 0 0 0;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -332,11 +332,11 @@ p {
 /* Objects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .fullwidth {
-  width: 101.5%;
+  width: 100%;
   float: right;
   right: 0;
   left: 0;
-  margin: -10px -10px 0px 0px !important;
+  margin: -10px 0px 0px 0px !important;
 }
 
 .stretch {
@@ -344,7 +344,7 @@ p {
   float: right;
   right: 0;
   left: 0;
-  margin: 0px -50px 0px 0px !important;
+  margin: 0 !important;
 }
 
 .crossList {
@@ -638,9 +638,8 @@ nav a {
 
 @media (max-width: 850px) {
   html {
-    position: relative;
-    left: -5px;
-    margin: 0 -5px 0 -12px;
+    margin: 0;
+    width: 100%;
     max-width: 100vw;
   }
   body {

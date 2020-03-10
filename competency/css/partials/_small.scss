@@ -1,8 +1,7 @@
 @media (max-width: $minWidth) {
     html {
-        position: relative;
-        left: -5px;
-        margin: 0 -5px 0 -12px;
+        margin: 0;
+        width: 100%;
         max-width: 100vw;
     }
 
