@@ -137,7 +137,169 @@ document.getElementById(<span class="comment">[elementId]</span>).style.<span cl
           <h5>DESIGNING, DEFINING, AND TRIGGERING CSS3 TRANSITIONS, TRANSFORMS, AND ANIMATIONS WITHOUT CUSTOM LIBRARIES
           </h5>
           <p>This is the section that I've most looked forward to as CSS is one of my favorite programming languages. I
-            love programming, but at my core I'm really a </p>
+            love programming, but at my core I'm really a designer, so CSS is the one programming language where I get
+            to really express myself artistically.</p>
+
+          <!--CSS Transitions
+          //////////////////////////////////////////////////////////////////// -->
+          <h3>CSS Transitions</h3>
+          <p>First, let's look at <b>CSS Transitions</b>. These are a lot of fun and can really make for some cool
+            effects like the example above where the sphere transitions from green to blue in 1 second. Here, we will
+            use some similar animations and go over some of the properties that are related to transitions in CSS. The
+            main properties that are modified in a CSS Transition are as follows:</p>
+
+          <pre class="codeBlock">
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function</pre>
+
+          <p>These can all be expressed within a simple transform statement, or can be outlined in separate lines as
+            shown above. If we were to compare the two, it might look like the following example:</p>
+
+          <pre class="codeBlock">
+div {
+  transition-property: height;
+  transition-duration: 5s;
+  transition-timing-function: ease;
+  transition-delay: 2s;
+}
+<div class="comment">// is equivalent to:</div>
+div {
+  transition: height 5s ease 2s;
+}</pre>
+
+          <p id="timing-functions">Among these effects, the transitions can be customized further to create some truly
+            awesome effects. The
+            <code>transition-timing-function</code>, for example, comes with added customizations that allow the user to
+            specify the speed curve of the transition effect. We will demonstrate some examples of some of these
+            comparatively, but first, the values are as follows:</p>
+          <pre class="codeBlock">
+ease <div class="comment">- specifies a transition effect with a slow start, then fast, then end slowly (this is default)</div>
+linear <div class="comment">- specifies a transition effect with the same speed from start to end</div>
+ease-in <div class="comment">- specifies a transition effect with a slow start</div>
+ease-out <div class="comment">- specifies a transition effect with a slow end</div>
+ease-in-out <div class="comment">- specifies a transition effect with a slow start and end</div>
+cubic-bezier(n,n,n,n) <div class="comment">- lets you define your own values in a cubic-bezier function</div></pre>
+
+          <p>So, let's see some of these in action! The code below is based loosely on a <a
+              href="https://www.w3schools.com/css/css3_transitions.asp">W3 Schools demonstration</a> of transition
+            timing functions. Notice when the transitioning objects slow down or speed up is different in each instance.
+          </p>
+
+          <p class="codepen" data-height="375" data-theme-id="default" data-default-tab="css,result"
+            data-user="costigan-stephen" data-slug-hash="ZEGoVpw"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="ZEGoVpw">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/ZEGoVpw">
+                ZEGoVpw</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+          <p>
+            The transitions demonstrated above are the width and background color, which are both transitioned
+            using the <code>transition-property</code> of <code>all</code> rather than specifying them individually for
+            the duration specified for the animation. The syntax of that property can be any of the following:</p>
+
+          <pre class="codeBlock">transition-property: none|all|property|initial|inherit;</pre>
+
+          <p>Also, notably, the <code>transition-timing-function</code> was applied outside of the transition statement
+            and within the individual objects, further showing the versatility that these commands can have. </p>
+
+
+
+
+          <!--CSS Transforms
+          //////////////////////////////////////////////////////////////////// -->
+          <h3>CSS Transforms</h3>
+          <p>For ease of delivery, this section will be split into two parts, namely: 2D Transforms, and 3D Transforms.
+            First, let's look into the different transform properties:</p>
+          <pre class="codeBlock">
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()</pre>
+
+          <p>In order to best demonstrate this, we thought it would be good to look into some examples of each of these
+            in action! There's some good fun that we can have, for example:</p>
+          <p class="codepen" data-height="355" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="rNVvbBo"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="rNVvbBo">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/rNVvbBo">
+                rNVvbBo</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+          <p>Now, let's take a look at 3D Transforms! This is where this really gets interesting!</p>
+          <pre class="codeBlock"><b><u>Property</u>            <u>Description</u></b>
+transform           Applies a 2D or 3D transformation to an element
+transform-origin    Allows you to change the position on transformed elements
+transform-style     Specifies how nested elements are rendered in 3D space
+perspective         Specifies the perspective on how 3D elements are viewed
+perspective-origin  Specifies the bottom position of 3D elements
+backface-visibility Defines whether or not an element should be visible when not facing the screen</pre>
+
+
+
+          <!--CSS Animations
+          //////////////////////////////////////////////////////////////////// -->
+          <h3>CSS Animations</h3>
+          <p>The Last section we will discuss here will be about <b>CSS Animations</b>. Animations are a lot of fun and
+            can be triggered in a number of different ways, from hover effects, to class changes, to onclick events.
+            There are numerous ways to trigger and create them, which makes them extremely versatile and easy to work
+            with. Animations can be defined with the following properties: </p>
+
+          <pre class="codeBlock">
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation</pre>
+          <p>Something that needs further clarification from the above list is the <code>animation-fill-mode</code>,
+            which specifies a default value that an object can have while an animation is not running. This can be
+            defined with the following values:</p>
+          <pre class="codeBlock">
+none <div class="comment">- Default value. Animation will not apply any styles to the element before or after it is executing</div>
+forwards <div class="comment">- The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)</div>
+backwards <div class="comment">- The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period</div>
+both <div class="comment">- The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions</div></pre>
+
+          <p>Also of note, these animations can also utilize the same <code>timing-functions</code> as <a
+              href="#timing-functions">above</a>. This allows for animations to be defined with keyframes, but also
+            allows for animation related timing to be defined. Rather than get into that, as I feel this is well
+            represented above, let's get into a demonstration. You may have noticed that similar to transitions, the
+            animation can be defined with one line or by specifying the properties on separate lines. For example:</p>
+          <pre class="codeBlock">
+div {
+  animation-name: moveblock;
+  animation-duration: 3s;
+  animation-iteration-infinite: 2;
+}
+<div class="comment">// is equivalent to:</div>
+div {
+  animation: moveblock 3s infinite;
+}</pre>
+          <p>By way of demonstration, I've decided to use an animation that I created for my final project, but this
+            time it will be triggered from hovering over text rather than as background content. This example uses
+            content from another lesson in that there are animations triggered on and off of hover. This afore mentioned
+            hover effect triggers a JavaScript class change, but the same could be done with CSS hover effects. You will
+            find that as you place your mouse over the central text box, the animation shows the background getting
+            flooded, whereas removing your mouse from the text area drains the water from the image. Feel free to mess
+            with it, I know I've certainly done plenty of that.
+          </p>
           <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result"
             data-user="costigan-stephen" data-slug-hash="ExjyOoP"
             style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
