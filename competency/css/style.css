@@ -396,7 +396,6 @@ pre {
 }
 
 .sectionarea {
-  margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -559,7 +558,7 @@ nav a {
 }
 
 @media (max-width: 850px) {
-  span, span:before, span:after {
+  nav span, nav span:before, nav span:after {
     width: 35px;
     height: 5px;
     background-color: #18283d;
@@ -571,24 +570,24 @@ nav a {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  span:hover, span:hover:before, span:hover:after {
+  nav span:hover, nav span:hover:before, nav span:hover:after {
     background-color: white;
     border: 1px solid white;
   }
-  span {
+  nav span {
     top: 25px;
     left: 20px;
     position: fixed;
     cursor: pointer;
   }
-  span:before, span:after {
+  nav span:before, nav span:after {
     content: "";
   }
-  span:before {
+  nav span:before {
     top: -16px;
     left: -1px;
   }
-  span:after {
+  nav span:after {
     top: -3px;
     left: -1px;
   }
@@ -619,7 +618,7 @@ nav a {
   header ul li:hover {
     background: #111;
   }
-  .menu-icon.open span, .menu-icon.open span:before, .menu-icon.open span:after {
+  .menu-icon.open nav span, nav .menu-icon.open span, .menu-icon.open nav span:before, nav .menu-icon.open span:before, .menu-icon.open nav span:after, nav .menu-icon.open span:after {
     border: 0px solid black;
     margin: 0;
   }
