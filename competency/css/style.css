@@ -395,6 +395,11 @@ pre {
   max-width: 90%;
 }
 
+.sectionarea {
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .home {
   background-attachment: fixed;
   background-position: center;
