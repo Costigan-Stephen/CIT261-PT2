@@ -234,13 +234,12 @@ element.addEventListener(event, function, useCapture)</pre>
             phase'. But what is a bubbling phase?</p>
 
           <p><a href="https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-phases">W3 Schools
-              has a great guide</a> to this as it relates to the DOM in which they
-            state:</p>
+              has a great guide</a> to this as it relates to the DOM in which they state:</p>
           <p class=highlight>The DOM event flow is the process through which the event originates from the DOM Events
             implementation and is dispatched into a tree. Each event has an event target, a targeted node in the case
             of the DOM Event flow, toward which the event is dispatched by the DOM Events implementation.</p>
           <p>A good way to imagine this is using the following image:</p>
-          <img class="center" src="images/eventflow.png" alt="event Flow" style="width:100%;">
+          <img class="center" src="images/eventflow.png" alt="event Flow" style="max-width:90%;">
           <p>As this image, <a
               href="https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-phases">courtesy of
               W3 Schools</a>, shows us, the actions are broken down in 3 phases. Namely:<br />
@@ -250,12 +249,11 @@ element.addEventListener(event, function, useCapture)</pre>
               the direct parent of the target node.<br />
               <b>2. The target phase:</b> the event is dispatched to the target node.<br />
               <b>3. The bubbling phase:</b> the event is dispatched to the target's ancestors from the direct parent
-              of
-              the target node to the root of the tree.<br /></div>
+              of the target node to the root of the tree.<br /></div>
           </p>
 
-          <p>So lets get into some coding! What if we had some text that changed color when the mouse went over it?
-            Hover effects are pretty fun to do.</p>
+          <p>So lets get into some coding! What if we had some text that changed color when the mouse or a users finger
+            went over it? Hover effects are pretty fun to do.</p>
           <p class="codepen" data-height="305" data-theme-id="default" data-default-tab="js,result"
             data-user="costigan-stephen" data-slug-hash="eYNvXjK"
             style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
