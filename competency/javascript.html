@@ -229,6 +229,45 @@ function objCar(Make,Model,Year,Mileage) {
               on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <br />
+          <h2>Prototyping</h2>
+          <p>Lastly, let's briefly look at prototyping, which really need its own area for
+            explanation. Consider the following object. I've listed a store item object as an ideal example as
+            this is something that can and regularly would be used in these kinds of circumstances if those websites
+            were to rely on JavaScript and didn't have the numerous other technoligies available.</p>
+          <pre class="codeBlock">
+let item = function() {
+  this.name         = "BubbleGum";
+  this.description  = "Hubba Bubba Extra Chewy";
+  this.category     = "Candy";
+  this.cost         = 0.99;
+}</pre>
+          <p>If we were to want to use this object as a 'template' for more objects, or add new properties, we could do
+            so using the prototype command. It might look something like this:</p>
+          <pre class="codeBlock">
+let newItem = new Item(); <span class="comment">// new object with default values listed above</span>
+
+<span class="comment">// Here, we can add or change values in the item function's prototype</span>
+newItem.prototype.saleprice = 0.79; <span class="comment">// Did not exist before</span>
+newItem.prototype.price = 0.89; <span class="comment">// Changed value of existing price for this object, but not for original</span>
+</pre>
+          <p>So, a few things went on here. You will notice that a new object was created as an instance of the previous
+            Item. This new item, called appropriately
+            <i>newItem</i>, inherited the values of item, but then was able to create prototype values. These
+            prototype values did not replace the original value, in the case of price, but instead changed it for the
+            individual instance of that object that this created as well as setting a new property that did not exist in
+            the original object.</p>
+          <p>So, we ought to put it to practice! Note, the sale price does not exist in the initial object so retrieving
+            values will return undefined for that field. The above code is incorporated in the following example:</p>
+          <p class="codepen" data-height="500" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="yLNGbEK"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="yLNGbEK">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/yLNGbEK">
+                yLNGbEK</a> by Costigan-Stephen (<a href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
         </div>
       </section>
 
