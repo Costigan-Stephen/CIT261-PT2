@@ -156,10 +156,8 @@ var newCar = Object.create(cars);
           <p>You may notice that the new array "newCar" now has the same properties of Make, Model, Year, and Mileage as
             Cars did, but with entirely different values. This can be an effective method of creating a series of values
             based on the same properties. An example of where this might be useful is on occasions where you might want
-            to
-            compare two different cars online in a car buying scenario or otherwise. In these occasions there would
-            likely
-            be more properties to the vehicle such as asking price and condition.
+            to compare two different cars online in a car buying scenario or otherwise. In these occasions there would
+            likely be more properties to the vehicle such as asking price and condition.
           </p>
           <p>Next, the THIRD method utilizes functions to create objects:
             <pre class="codeBlock">
@@ -183,6 +181,50 @@ function objCar(Make,Model,Year,Mileage) {
             data-pen-title="Creating Objects">
             <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/wvavYLM">
                 Creating Objects</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+          <p>The above examples utilize pre-set values, we ought to also look at ways to create new objects based
+            on inputs. Unlike the above example, we will separate all three by their individual methods. The first
+            method takes the form of an associative array.</p>
+
+          <p class="codepen" data-height="425" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="LYVMZxN"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="Object Creation: Assoc Arrays">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/LYVMZxN">
+                Object Creation: Assoc Arrays</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <p>This next method utilizes the Object.Create method. Similar to the above example, we will use 4 input
+            variables, but you can set as many as you need. In the case below, retrieval of any of these
+            values can be done in the form of object.value, for example: person.name, if used below, would retrieve the
+            stored value for the first name of the individual</p>
+          <p class="codepen" data-height="460" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="zYGyBbq"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="Object Creation: Object.Create">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/zYGyBbq">
+                Object Creation: Object.Create</a> by Costigan-Stephen (<a
+                href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <p>The third method mentioned above utilizes object function creation. Very similar to the above two examples,
+            this method takes function parameters and sets them as elements of an object. Notice, in this case, the
+            function cannot simply be called, but must be called as a 'new' object in order for it to work, thus showing
+            that the object has been created as an individual entity.</p>
+
+          <p class="codepen" data-height="460" data-theme-id="default" data-default-tab="js,result"
+            data-user="costigan-stephen" data-slug-hash="NWqebgp"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="Object Creation: Function Create">
+            <span>See the Pen <a href="https://codepen.io/costigan-stephen/pen/NWqebgp">
+                Object Creation: Function Create</a> by Costigan-Stephen (<a
                 href="https://codepen.io/costigan-stephen">@costigan-stephen</a>)
               on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
