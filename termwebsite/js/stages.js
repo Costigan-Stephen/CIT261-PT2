@@ -60,6 +60,9 @@ function getStage(stage) {
             colortest('remove');
             sessionStorage.setItem("failed", "");
             break;
+        case 'restart':
+            reset();
+            break;
             // default:
             //     changeText("Button Pressed " + stage + " times!");
     }

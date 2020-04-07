@@ -1,11 +1,10 @@
+/* Globals
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap");
 
 $consoleFont: "Cutive Mono",
 monospace;
-
-// html {
-//     width: 100%;
-// }
 
 body {
     width: 99%;
@@ -31,6 +30,39 @@ body {
     background-color: #ddd;
     text-align: center;
     font-family: $consoleFont;
+    transition: 1s ease;
+}
+
+#outputDiv:hover {
+    transform: scaleY(1.2);
+}
+
+#QuoteText {
+    margin-top: 50px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 500px;
+    height: 150px;
+    color: gray;
+    margin-bottom: -50px;
+
+    .quotemark {
+        z-index: -1;
+        float: left;
+        font-family: Impact,
+            sans serif;
+        font-size: 100pt;
+        color: black;
+        position: relative;
+        top: 28px;
+        color: #cce4ff;
+        left: 22px;
+    }
+
+    strong {
+        font-size: 14pt;
+        color: black;
+    }
 }
 
 .center {

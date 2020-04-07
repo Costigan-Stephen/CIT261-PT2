@@ -2,6 +2,19 @@ window.onbeforeunload = function () {
     reset();
 }
 
+window.onload = function () {
+    clearInterval(getQuote);
+    RandomQuote();
+    getQuote();
+    setInterval(getQuote, 10000);
+}
+
+function loopQuote() {
+    clearInterval(getQuote);
+    RandomQuote();
+    setInterval(getQuote, 10000); //Quote API
+}
+
 function clicked(element) {
 
     var x = document.getElementById("x").value;

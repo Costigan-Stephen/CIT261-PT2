@@ -1,6 +1,5 @@
 {
-  "stages": [
-    {
+  "stages": [{
       "id": 1,
       "action": "none",
       "text": "Can't you read? The sign said NOT to press the button!"
@@ -186,32 +185,32 @@
     {
       "id": 37,
       "action": "water.drain",
-      "text": "Alright, so that wasn't as satisfying as I thought."
+      "text": "..."
     },
     {
       "id": 38,
       "action": "water.remove",
-      "text": "That certainly didn't work... Hmm..."
+      "text": "Great, now the carpet is all wet! See what you made me do?"
     },
     {
       "id": 39,
       "action": "none",
-      "text": "Alright, back to the drawing board!"
+      "text": "I guess it's time to go back to the drawing board!"
     },
     {
       "id": 40,
       "action": "draw.add",
-      "text": "Seriously, here's a canvas drawing I did!"
+      "text": "Literally, here's a drawing... on a board...!"
     },
     {
       "id": 41,
       "action": "none",
-      "text": "Um... You're not supposed to touch someone elses art..."
+      "text": "Can you... Can you not touch my artwork?"
     },
     {
       "id": 42,
       "action": "none",
-      "text": "Didn't anyone ever teach you manners? I mean, really!"
+      "text": "Didn't anyone ever teach you that? I mean, really!"
     },
     {
       "id": 43,
@@ -251,7 +250,7 @@
     {
       "id": 50,
       "action": "none",
-      "text": "Or are you too sadistic to even care or notice?"
+      "text": "Or are you too cruel to even care or notice?"
     },
     {
       "id": 51,
@@ -271,7 +270,7 @@
     {
       "id": 54,
       "action": "none",
-      "text": "And since the facts determine you might be stupid, I figured someone needed to tell you."
+      "text": "And since the facts determine you might be stupid, I figured someone ought to tell you."
     },
     {
       "id": 55,
@@ -434,17 +433,27 @@
     {
       "id": 86,
       "action": "none",
-      "text": "At any rate, there is no point to this."
+      "text": "You know, you actually remind me of someone."
     },
     {
       "id": 87,
       "action": "none",
-      "text": "Which you will see, if you can ever make it to the end."
+      "text": "I swear I've had this conversation once before."
     },
     {
       "id": 88,
       "action": "none",
-      "text": "[WORK IN PROGRESS LATEST STATE OF DEVELOPMENT - STAY TUNED]"
+      "text": "I was sitting here minding my own business"
+    },
+    {
+      "id": 89,
+      "action": "none",
+      "text": "without a care in the world, no dialog at all.  Do you want to know what I said to them?"
+    },
+    {
+      "id": 90,
+      "action": "restart",
+      "text": "you want to know what I said? Press the button once more to find out, I said:"
     },
     {
       "id": 1000,
