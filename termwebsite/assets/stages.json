@@ -448,15 +448,20 @@
     {
       "id": 89,
       "action": "none",
-      "text": "without a care in the world, no dialog at all.  Do you want to know what I said to them?"
+      "text": "without a care in the world, no dialog at all."
     },
     {
       "id": 90,
       "action": "none",
-      "text": "you want to know what I said? Press the button once more to find out, I said:"
+      "text": "you want to know what I said to them? Press the button once more to find out, I said:"
     },
     {
-      "id": 90,
+      "id": 91,
+      "action": "none",
+      "text": "---"
+    },
+    {
+      "id": 92,
       "action": "restart",
       "text": "---"
     },
