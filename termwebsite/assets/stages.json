@@ -457,11 +457,6 @@
     },
     {
       "id": 91,
-      "action": "none",
-      "text": "---"
-    },
-    {
-      "id": 92,
       "action": "restart",
       "text": "---"
     },
