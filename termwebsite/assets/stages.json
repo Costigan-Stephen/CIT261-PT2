@@ -452,8 +452,13 @@
     },
     {
       "id": 90,
-      "action": "restart",
+      "action": "none",
       "text": "you want to know what I said? Press the button once more to find out, I said:"
+    },
+    {
+      "id": 90,
+      "action": "restart",
+      "text": "---"
     },
     {
       "id": 1000,
