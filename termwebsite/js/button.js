@@ -1,5 +1,9 @@
 window.onbeforeunload = function () {
     reset();
+    clearInterval(getQuote);
+    RandomQuote();
+    getQuote();
+    setInterval(getQuote, 10000);
 }
 
 window.onload = function () {
