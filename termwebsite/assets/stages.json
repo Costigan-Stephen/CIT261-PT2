@@ -452,13 +452,8 @@
     },
     {
       "id": 90,
-      "action": "none",
-      "text": "you want to know what I said to them? Press the button once more to find out, I said:"
-    },
-    {
-      "id": 91,
       "action": "restart",
-      "text": "---"
+      "text": "you want to know what I said to them? Press the button once more to find out, I said:"
     },
     {
       "id": 1000,
