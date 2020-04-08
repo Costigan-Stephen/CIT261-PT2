@@ -23,10 +23,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 99.5vw;
+    width: 99vw;
     height: 50px;
     margin: 25px 0;
-    padding: 7px 14px;
+    padding: 7px 14px 7px 25px;
     background-color: #ddd;
     text-align: center;
     font-family: $consoleFont;
@@ -41,7 +41,7 @@ body {
     margin-top: 50px;
     line-height: 20px;
     text-align: center;
-    max-width: 500px;
+    max-width: 450px;
     height: 150px;
     color: gray;
     margin-bottom: -50px;
@@ -108,6 +108,20 @@ audio {
         margin-right: -25px;
         margin-top: 2px;
     }
+
+    #QuoteText {
+        font-size: 10pt;
+        max-width: 90vw;
+
+        .quotemark {
+            font-size: 80pt;
+        }
+
+        strong {
+            font-size: 12pt;
+        }
+    }
+
 }
 
 canvas {

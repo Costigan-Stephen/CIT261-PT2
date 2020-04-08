@@ -12,6 +12,7 @@ function getStage(stage) {
             document.getElementById("buttoncase").classList.add("stage5");
             break;
         case 'remove.stage5': //6
+            document.getElementById("buttoncase").removeAttribute("onClick");
             document.getElementById("buttoncase").classList.remove("stage5");
             document.getElementById("buttoncase").classList.remove("stage5-active");
             document.getElementById("buttoncase").classList.add("stage6");

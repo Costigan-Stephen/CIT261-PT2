@@ -3,7 +3,6 @@
 
 @media (min-width: $minWidth) {
     .stage5 {
-        z-index: 10;
         position: relative;
         -webkit-transition: 1s;
         -moz-transition: 1s;
@@ -26,10 +25,11 @@
 
 @media (max-width: $minWidth) {
     .stage5 {
+        z-index: 150;
         animation-iteration-count: infinite;
         animation-name: stage5Move;
         animation-duration: 2s;
-        transition: all 1s ease;
+        transition: all 2s ease;
     }
 }
 
