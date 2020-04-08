@@ -12,7 +12,6 @@ function getStage(stage) {
             document.getElementById("buttoncase").classList.add("stage5");
             break;
         case 'remove.stage5': //6
-            document.getElementById("buttoncase").removeAttribute("onClick");
             document.getElementById("buttoncase").classList.remove("stage5");
             document.getElementById("buttoncase").classList.remove("stage5-active");
             document.getElementById("buttoncase").classList.add("stage6");
@@ -165,7 +164,6 @@ function draw(param) {
 }
 
 function colortest(param) {
-    var canvas = document.getElementById('canvas')
     if (param == "add") {
         multibutton(param, 1, "colortest")
     } else if (param == "fade") {

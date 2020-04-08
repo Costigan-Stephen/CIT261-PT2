@@ -31,7 +31,7 @@ function clicked(element) {
             if (element.id) {
                 key = element.id;
             } else {
-                key = 1;
+                key = 0;
             }
         }
     } else {
@@ -146,8 +146,14 @@ function failed() {
 // }
 
 function readJson(stage) {
-    var i = parseInt(stage) - 1;
-    var notify = JSON.parse(localStorage["stages"]);
+    var i = parseInt(stage);
+
+    if (localStorage["stages"]) {
+        var notify = JSON.parse(localStorage["stages"]);
+    } else {
+        GetStages();
+        var notify = JSON.parse(localStorage["stages"]);
+    }
 
     var action = notify.stages[stage].action;
     localStorage.setItem("action", action);
@@ -176,6 +182,19 @@ function GetStages() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var stages = JSON.parse(xhr.responseText);
             localStorage.setItem("stages", JSON.stringify(stages));
+        } else {
+            var xhr2 = new XMLHttpRequest();
+            xhr2.open("GET", "http://uplift.s-costigan.com/assets/stages.json", true);
+            xhr2.send();
+
+            xhr2.addEventListener("readystatechange", processRequest, false);
+
+            function processRequest() {
+                if (xhr2.readyState == 4 && xhr2.status == 200) {
+                    var stages = JSON.parse(xhr2.responseText);
+                    localStorage.setItem("stages", JSON.stringify(stages));
+                }
+            }
         }
     }
 }
