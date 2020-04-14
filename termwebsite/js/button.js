@@ -1,3 +1,7 @@
+window.onload = function() {
+ loopQuote();
+}
+
 function loopQuote() {
     if (!clearInterval(getQuote)) {
         //Loop not run before, get new quote for display
