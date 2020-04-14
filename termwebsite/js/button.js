@@ -9,6 +9,10 @@ function loopQuote() {
 }
 
 function clicked(element) {
+    if (!clearInterval(getQuote)) {
+        //Loop not run before, get new quote for display
+        loopQuote();
+    }
 
     var x = document.getElementById("x").value;
     var key = sessionStorage.getItem("id");
