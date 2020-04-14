@@ -1,6 +1,6 @@
-window.onload = function() {
+
  loopQuote();
-}
+
 
 function loopQuote() {
     if (!clearInterval(getQuote)) {
