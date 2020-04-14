@@ -10,7 +10,7 @@ function loopQuote() {
 
 function clicked(element) {
     if (!clearInterval(getQuote)) {
-        //Loop not run before, get new quote for display
+        //Onload scripts did not run, initiate API manually
         loopQuote();
     }
 
