@@ -1,21 +1,8 @@
-window.onbeforeunload = function () {
-    reset();
-    GetStages()
-    clearInterval(getQuote);
-    RandomQuote();
-    getQuote();
-    setInterval(getQuote, 10000);
-}
-
-window.onload = function () {
-    clearInterval(getQuote);
-    RandomQuote();
-    getQuote();
-    GetStages()
-    setInterval(getQuote, 10000);
-}
-
 function loopQuote() {
+    if (!clearInterval(getQuote)) {
+        //Loop not run before, get new quote for display
+        getQuote();
+    }
     clearInterval(getQuote);
     RandomQuote();
     setInterval(getQuote, 10000); //Quote API
