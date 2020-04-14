@@ -64,6 +64,13 @@ body {
     }
 }
 
+.note {
+    color: lightGray;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 8pt;
+}
+
 .center {
     text-align: center;
 }
@@ -102,10 +109,10 @@ audio {
         margin-top: 2px;
     }
 
-    body {
+   body {
         margin-left: -5px;
         margin-right: -25px;
-        margin-top: 2px;
+        margin-top: -30px;
     }
 
     #QuoteText {
