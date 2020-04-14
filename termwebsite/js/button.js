@@ -1,14 +1,17 @@
 
- loopQuote();
+loopQuote();
 
 
 function loopQuote() {
+   if (!localStorage["quote"]) {
+        //CREATE JSON OBJECT
+        RandomQuote();
+    }
     if (!clearInterval(getQuote)) {
         //Loop not run before, get new quote for display
         getQuote();
     }
     clearInterval(getQuote);
-    RandomQuote();
     setInterval(getQuote, 10000); //Quote API
 }
 
@@ -31,7 +34,7 @@ function clicked(element) {
     }
     increment(element, key);
     getStage(parseInt(key));
-    if (!clearInterval(getQuote)) {
+    if (!localStorage["quote"]) {
         //Onload scripts did not run, initiate API manually
         loopQuote();
     }
