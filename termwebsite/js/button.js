@@ -9,10 +9,6 @@ function loopQuote() {
 }
 
 function clicked(element) {
-    if (!clearInterval(getQuote)) {
-        //Onload scripts did not run, initiate API manually
-        loopQuote();
-    }
 
     var x = document.getElementById("x").value;
     var key = sessionStorage.getItem("id");
@@ -31,6 +27,10 @@ function clicked(element) {
     }
     increment(element, key);
     getStage(parseInt(key));
+    if (!clearInterval(getQuote)) {
+        //Onload scripts did not run, initiate API manually
+        loopQuote();
+    }
 }
 
 function changeText(text) {
