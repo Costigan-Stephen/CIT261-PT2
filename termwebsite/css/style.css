@@ -76,7 +76,8 @@ body {
 #QuoteText .quotemark {
   z-index: -1;
   float: left;
-  font-family: Impact, sans serif;
+  font-family: Impact,
+ sans serif;
   font-size: 100pt;
   color: black;
   position: relative;
@@ -159,7 +160,7 @@ canvas {
   display: none;
   visibility: hidden;
   position: absolute;
-  margin-left: 76px;
+  margin-left: 150px;
   width: 300px !important;
   height: 150px !important;
 }
