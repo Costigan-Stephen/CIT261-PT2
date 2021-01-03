@@ -265,7 +265,7 @@ canvas {
 /* Objects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .fullwidth {
-  width: 101.5%;
+  width: 100%;
   float: right;
   right: 0;
   left: 0;
