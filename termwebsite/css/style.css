@@ -35,6 +35,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #outputDiv {
